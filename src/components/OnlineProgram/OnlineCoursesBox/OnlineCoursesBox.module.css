@@ -1,0 +1,72 @@
+.onlineCourses {
+  width: 100%;
+  padding: 5vw 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.onlineCourses h2 {
+  font-size: 2.2vw;
+}
+
+.onlineCourses h2 span {
+  color: #df762a;
+}
+
+.boxList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8vw;
+}
+
+.box {
+  height: 10vw;
+  width: 12vw;
+  padding: 1vw;
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 2vw;
+  background-color: #124a2a98;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  /* grid-template-columns: repeat(4, 1fr); */
+  font-size: 1.2vw;
+  transition: all 0.3s ease-in-out;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box:is(:hover, :focus, :active) {
+  color: #124b2b;
+  border-color: aqua;
+  background-color: #df762a;
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 768px) {
+  .onlineCourses h2 {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .onlineCourses h2 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  .boxList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+  }
+  .box {
+    height: 20vw;width: 38vw;
+  }
+  .box h3 {font-size: 3.3vw;}
+}

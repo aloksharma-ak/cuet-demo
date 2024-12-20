@@ -1,0 +1,173 @@
+/* Container styling */
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 5vw 10%;
+}
+
+/* Header styling */
+.header {
+  font-size: 1.2vw;
+  color: #aaa;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.subHeader {
+  font-size: 2.5vw;
+  color: #21686c;
+  font-weight: 600;
+  margin-bottom: 50px;
+  -webkit-text-stroke: 0.5px #68a9ad;
+}
+
+/* Steps container */
+.stepsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Individual step styling */
+.step {
+  /* width: 30%; */
+  text-align: center;
+  position: relative;
+}
+
+/* Line connector styling */
+.connector {
+  height: 3px;
+  width: 50%;
+  background-color: #e07525;
+  position: relative;
+}
+
+/* Step title */
+.stepTitle {
+  font-size: 1.5vw;
+  color: #fff;
+  font-weight: 500;
+  margin: 25px 0 15px;
+}
+
+/* Step description */
+.stepDescription {
+  font-size: 1.1vw;
+  color: #aaa;
+  margin: 0 5vw;
+}
+
+.stepsContainer .step:nth-child(1) .connector {
+  float: right;
+}
+
+.stepsContainer .step:nth-child(2) .connector {
+  width: 100%;
+}
+
+.connector::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: #e07525;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.stepsContainer .step:nth-child(1) .connector::after {
+  left: 0;
+}
+
+.stepsContainer .step:nth-child(2) .connector::after {
+  left: 48%;
+}
+
+.stepsContainer .step:nth-child(3) .connector::after {
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 8vw 10%;
+  }
+  .header {
+    font-size: 2vw;
+  }
+  .subHeader {
+    font-size: 4.5vw;
+  }
+  .stepTitle {
+    font-size: 2.5vw;
+  }
+  .stepDescription {
+    font-size: 1.75vw;
+    margin: 0 1vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10vw 10%;
+  }
+  .header {
+    font-size: 3.5vw;
+  }
+  .subHeader {
+    font-size: 6.5vw;
+  }
+  .stepsContainer {
+    flex-direction: column;
+  }
+  .stepTitle {
+    font-size: 4.5vw;
+    margin-top: 0;
+  }
+  .stepDescription {
+    font-size: 3.3vw;
+    margin: 0 0 8vw;
+    text-align: justify;
+  }
+  .step {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+  }
+  .stepText {
+    width: 85%;
+    text-align: left;
+  }
+  .connector {
+    width: 4px !important;
+    height: 13vw;
+  }
+  .connector::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .stepsContainer .step:nth-child(1) .connector::after {
+    top: 0;
+  }
+  
+  .stepsContainer .step:nth-child(2) .connector::after {
+    top: 40%;
+  }
+  
+  .stepsContainer .step:nth-child(3) .connector::after {
+    top: 100%;
+  }
+  
+.stepsContainer .step:nth-child(1) {
+    align-items: flex-end;
+  }
+  
+  .stepsContainer .step:nth-child(2) .connector {
+    height: 26vw !important;
+  }
+  .stepsContainer .step:nth-child(3) .connector {
+    height: 8vw !important;
+  }
+}

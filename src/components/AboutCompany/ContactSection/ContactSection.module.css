@@ -1,0 +1,160 @@
+.container {
+  text-align: center;
+  padding: 2rem 2rem 4rem;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+    background-color: #002b21;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 380px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.cardTitle {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #002b21;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.cardSubTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.cardDesc {
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.icons span {
+    width: 3vw;
+    height: 3vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* padding: 0.5rem; */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons span svg {
+    font-size: 1.5rem;
+    color: #002b21;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons span:hover {
+    transform: scale(1.1);
+    border: 1px solid aqua;
+    background-color: transparent;
+}
+
+.icons span:hover svg {
+    color: #e07525;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #013729;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e07525;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+    .cardTitle {
+        font-size: 1.5rem;
+    }
+    .cardDesc {
+        font-size: 0.8rem;
+    }
+    .icons span {
+        height: 5vw;
+        width: 5vw;
+    }
+    .icons span svg {
+        font-size: 2.6vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100% !important;
+        padding: 0.9rem;
+    }
+    .cardTitle {
+        font-size: 7.2vw;
+    }
+    .cardSubTitle {
+        font-size: 4.5vw;
+    }
+    .cardDesc {
+        font-size: 3vw;
+        font-weight: 100;
+    }
+    .icons span {
+        height: 10vw;
+        width: 10vw;
+    }
+    .icons span svg {
+        font-size: 5vw;
+    }
+}

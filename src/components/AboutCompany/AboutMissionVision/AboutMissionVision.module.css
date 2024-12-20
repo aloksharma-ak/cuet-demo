@@ -1,0 +1,103 @@
+/* General container styles */
+.container {
+  color: #ffffff;
+  padding: 3vw 10% 2vw;
+  text-align: center;
+}
+
+/* Heading style */
+.heading {
+  font-size: 3vw;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* Flex container for mission and vision cards */
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #092225;
+  border: 2px solid #1d7b5e; /* Green border */
+  border-radius: 2rem;
+  padding: 1.5rem;
+  width: calc(100% / 2 - 2vw);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Card title styling */
+.cardTitle {
+  font-size: 1.5vw;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Card text styling */
+.cardText {
+  font-size: 1vw;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Footer text styling */
+.footerText {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    .heading {
+        font-size: 4vw;
+    }
+    .cardTitle {
+        font-size: 2vw;
+    }
+    .cardText {
+        font-size: 1.2vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 5vw;
+    }
+    .cardTitle {
+        font-size: 3vw;
+    }
+    .cardText {
+        font-size: 1.5vw;
+    }
+    .footerText {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 6.1vw;
+    }
+    .cardsContainer {
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .card {
+        width: 100%;
+    }
+    .cardTitle {
+        font-size: 5vw;
+    }
+    .cardText {
+        font-size: 3.3vw;
+    }
+    .footerText {
+        text-align: justify;
+        margin-bottom: 3vw;
+    }
+}

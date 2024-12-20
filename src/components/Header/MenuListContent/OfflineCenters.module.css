@@ -1,0 +1,159 @@
+.menuDrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #222;
+  width: 100%;
+  min-height: 400px;
+  border-top: 1.5px solid #555;
+  border-bottom-left-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
+  overflow: hidden;
+  padding: 3vw 2.5vw;
+}
+
+.menuDropContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menuDropLeft {
+  width: 24%;
+}
+
+.menuDropLeft h2 {
+  width: 95%;
+  font-size: 2.22vw;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    rgba(64, 187, 172, 1) 0%,
+    rgba(64, 187, 172, 1) 33%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+}
+
+.btnYellow {
+  padding: 0.9vw 1.9vw;
+  border: none;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 0.25vw;
+  margin-top: 2vw;
+}
+
+.btnOffline {
+  padding: 0.9vw 1.9vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnOffline:hover {
+  background: #e07525;
+  color: #000;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.menuDropRight {
+  width: 76%;
+  border-left: 1px solid #444;
+  padding-left: 1.8vw;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.oneCard,
+.twoCard,
+.threeCard {
+  height: 19vw;
+}
+
+.twoCard {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.oneCard {
+  width: 25%;
+}
+
+.threeCard {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.threeCard1 {
+  width: 100%;
+  height: calc(100% / 2 - 5px);
+}
+
+.threeCard2,
+.threeCard3 {
+  width: calc(100% / 2 - 5px);
+  height: calc(100% / 2 - 5px);
+}
+
+.CardLink {
+  width: 100%;
+  height: 100%;
+}
+
+.offlineCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8vw;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.offlineCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.location {
+  position: absolute;
+  bottom: 0.28vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  padding: 0.3vw 0.5vw;
+  background: #4e4a4ae2;
+  border-radius: 0.4vw;
+  color: #fff;
+  text-align: center;
+}
+
+.location h3 {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.location p {
+  font-size: 0.8vw;
+  font-weight: 400;
+}
+
+/* Add responsive styles below */
+
+@media screen and (min-width: 768px) {
+  .menuDrop {
+    min-height: 25vw;
+  }
+}

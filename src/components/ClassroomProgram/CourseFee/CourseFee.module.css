@@ -1,0 +1,165 @@
+.courseFee {
+  width: 100%;
+  padding: 2vw 10%;
+}
+
+.courseFeeDiv {
+  position: relative;
+  padding: 2.5vw 0;
+  border-top: 5px solid rgb(26, 94, 94);
+}
+
+.contentTitle {
+  position: absolute;
+  top: -1.95vw;
+  left: 2vw;
+  color: rgb(26, 94, 94);
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #082319;
+  padding: 0 0.8vw;
+}
+
+.feeContentDiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.8vw 2vw 0.8vw;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feeContentDiv:hover,
+.feeContentDiv:focus,
+.feeContentDiv:active {
+  background-color: #e07525;
+}
+
+.feeContentDiv:hover .left svg,
+.feeContentDiv:focus .left svg,
+.feeContentDiv:active .left svg {
+  color: #000;
+}
+
+.feeContentDiv:hover .right .feeAmount h2 span,
+.feeContentDiv:focus .right .feeAmount h2 span,
+.feeContentDiv:active .right .feeAmount h2 span {
+  color: #082319;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.left svg {
+  color: #e07525;
+  font-size: 3vw;
+}
+
+.left select {
+  padding: 0.9vw 1vw;
+  font-size: 1.05vw;
+  border-radius: 3px;
+  outline: none;
+}
+
+.left option {
+  font-size: 1vw;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5vw;
+  cursor: pointer;
+}
+
+.feeAmount {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.feeAmount h2 {
+  font-size: 3vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.feeAmount h2 span {
+  font-weight: 600;
+  margin-left: 1.5vw;
+  padding: 0 1vw;
+  border-radius: 4px;
+  background-color: #e07525;
+}
+
+.feeAmount h3 {
+  font-size: 1.8vw;
+  font-weight: 500;
+  margin-top: 0.5vw;
+}
+
+.feeDetails {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.whyContainer {
+  width: 100%;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+.whyContainer h1 {
+  font-size: 2vw;
+  margin-bottom: 3vw;
+}
+
+.whyContainer h1 span {
+  color: #e07525;
+}
+
+.whyContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2vw;
+}
+
+.whyItem {
+  width: 49%;
+  background-color: rgba(10, 70, 70, 0.648);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  padding: 1vw;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.whyItem img {
+  width: 3vw;
+  mix-blend-mode: hard-light;
+}
+
+.whyItem p {
+  font-size: 1.2vw;
+}
+
+.whyItem:hover,
+.whyItem:focus,
+.whyItem:active {
+  background-color: #e07525;
+}

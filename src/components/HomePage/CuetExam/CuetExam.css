@@ -1,0 +1,61 @@
+
+/* Mobile View Styling */
+.mobile-cuet-exam {
+  display: none;
+  width: 100%;
+  background: #000000;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 0;
+}
+
+/* Media Queries for Responsive Design */
+
+
+
+@media (max-width: 480px) {
+   .mobile-cuet-exam {
+    display: block;
+    width: 100%;
+    padding: 3vw;
+  }
+
+  .mobile-cuet-heading {
+    font-size: 8vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+
+  .mobile-cuet-container {
+    background-color: #222;
+    border-radius: 5px;
+  }
+
+  .cuet-details {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  .mobile-cuet-details-summary {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+  }
+
+  .mobile-cuet-details-summary:is(:hover, :focus, :active) {
+    color: #e07525;
+  }
+
+
+  .mobile-cuet-details-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+  }
+
+  .mobile-cuet-details-content.open {
+    max-height: none;
+  }
+}

@@ -1,0 +1,174 @@
+.partnershipContainer {
+  padding: 3vw 10%;
+  text-align: center;
+}
+
+.header {
+  font-size: 2.9vw;
+  margin-bottom: 30px;
+  color: #53e5c8;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  /* min-width: 250px;
+  max-width: 350px; */
+  text-align: left;
+  border: 1px solid #aaa;
+}
+
+.cardHeader {
+  width: 100%;
+  height: 15vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.cardImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card .cardTitle {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  color: #ff8c42;
+}
+
+.card p {
+  font-size: 1vw;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card p strong {
+  font-size: 1.2vw;
+}
+
+.card h4 {
+  font-size: 1.2vw;
+  margin-top: 20px;
+  color: #000;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.card li {
+  font-size: 1vw;
+  color: #333;
+  list-style: disc;
+}
+
+.ctaButton {
+  background-color: #ffd700;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #e07525;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 3.5vw;
+  }
+  .card .cardTitle {
+    font-size: 2.2vw;
+  }
+  .card p,
+  .card li {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partnershipContainer {
+    padding: 6vw 10%;
+  }
+  .header {
+    font-size: 4vw;
+  }
+  .card .cardTitle {
+    font-size: 2.6vw;
+  }
+  .card p,
+  .card li {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partnershipContainer {
+    padding: 6vw 10%;
+  }
+  .header {
+    font-size: 6.5vw;
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2vw;
+  }
+  .card {
+    text-align: center;
+  }
+  .cardHeader {
+    height: 35vw;
+  }
+  .card .cardTitle {
+    font-size: 5.7vw;
+  }
+  .card p,
+  .card li {
+    font-size: 3.3vw;
+    text-align: justify;
+  }
+  .card p strong,
+  .card h4 {
+    font-size: 3.8vw;
+    text-align: left;
+  }
+  .ctaButton {
+    font-size: 3vw;
+  }
+}

@@ -1,0 +1,68 @@
+.classroomProgramHeading {
+    width: 100%;
+    padding: 3vw 10% 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .classroomProgramHeading h1 {
+    width: 65%;
+    color: #e07525;
+    font-size: 4vw;
+    line-height: 1.2;
+    margin-bottom: 2vw;
+  }
+  
+  .classroomProgramHeading h2 {
+    font-size: 2.8vw;
+    font-weight: 400;
+  }
+  
+  /* Medium screens (Tablets, small laptops) */
+  @media (max-width: 1024px) {
+    .classroomProgramHeading h1 {
+      font-size: 3.5vw;
+    }
+  
+    .classroomProgramHeading h2 {
+      font-size: 2.4vw;
+    }
+  }
+  
+  /* Small screens (Mobile devices) */
+  @media (max-width: 768px) {
+    .classroomProgramHeading {
+      padding: 4vw 5% 5vw;
+    }
+  
+    .classroomProgramHeading h1 {
+      width: 80%;
+      font-size: 6vw;
+      margin-bottom: 3vw;
+    }
+  
+    .classroomProgramHeading h2 {
+      font-size: 4.5vw;
+    }
+  }
+  
+  /* Extra small screens (Small mobile devices) */
+  @media (max-width: 480px) {
+    .classroomProgramHeading {
+      padding: 5vw 3% 6vw;
+    }
+  
+    .classroomProgramHeading h1 {
+      width: 90%;
+      font-size: 7vw;
+    }
+  
+    .classroomProgramHeading h2 {
+      font-size: 5vw;
+    }
+  }
+  

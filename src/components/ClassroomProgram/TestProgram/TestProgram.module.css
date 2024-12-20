@@ -1,0 +1,56 @@
+.testProgram {
+    width: 100%;
+    padding: 2vw 10%;
+  }
+  
+  .testProgramDiv {
+    position: relative;
+    padding: 2.5vw 0;
+    border-top: 5px solid rgb(26, 94, 94);
+  }
+  
+  .contentTitle {
+    position: absolute;
+    top: -1.95vw;
+    left: 2vw;
+    color: rgb(26, 94, 94);
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #082319;
+    padding: 0 0.8vw;
+  }
+  
+  .testProgramContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+  }
+  
+  .testItem {
+    padding: 1.1vw 2.2vw;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 255, 255, 0.265);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 3px 0px, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+  }
+  
+  .testNo {
+    font-size: 2.8vw;
+    font-weight: 600;
+  }
+  
+  .testTitle h3 {
+    font-size: 1.35vw;
+    font-weight: 400;
+  }
+  
+  .testTitle p {
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 0.4vw;
+  }
+  

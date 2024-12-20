@@ -1,0 +1,335 @@
+.CentreBlog {
+    width: 100%;
+    padding: 3vw 10%;
+    margin-top: 4rem;
+}
+
+.top {
+    width: 100%;
+    height: 20vw;
+    background: #e07525;
+    position: relative;
+    border-radius: 5px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(8, 35, 25, 0.5);
+}
+
+.blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+    border-radius: 5px;
+}
+
+.head {
+    font-size: 3vw;
+    font-weight: 600;
+    color: rgb(220, 244, 244);
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 2;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+
+.bottomLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.item img {
+    width: 100%;
+    height: 8vw;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.itemTitle {
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+
+.itemDesc {
+    font-size: 0.85vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.2vw;
+    opacity: 0.9;
+}
+
+.bottomRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.subHeading {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.subTitle {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.desc, .desc2 {
+    font-size: 1vw;
+    font-weight: 300;
+    opacity: 0.95;
+    text-align: justify;
+}
+
+
+
+/* cuetContainer */
+.cuetContainer {
+    margin-top: 4rem;
+}
+
+.cuetInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.desc2 {
+    margin-top: 0.5vw;
+}
+
+.desc2 span {
+    font-weight: 400;
+    color: #e07525;
+    opacity: 1;
+}
+
+.mt {
+    margin-top: 2rem;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.subTitle2 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: cursive;
+    margin-top: 0.5vw;
+}
+
+.list {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.listItem {
+    list-style: disc;
+}
+
+.subTitle3 {
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.desc3 {
+    font-size: 0.9vw;
+    font-weight: 300;
+    margin-top: 0.3vw;
+    text-align: justify;
+}
+
+.listItemNo {
+    list-style: decimal !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .CentreBlog {
+        padding: 4vw 10%;
+    }
+   
+    .head {
+        font-size: 3.5vw;
+    }
+    .bottom {
+        gap: 1.5vw;
+        margin-top: 2vw;
+    }
+    .bottomLeft {
+        gap: 1.5vw;
+    }
+    .itemTitle {
+        font-size: 1.2vw;
+    }
+    .itemDesc {
+        font-size: 1vw;
+    }
+    .bottomRight {
+        width: 100%;
+    }
+    .subHeading {
+        font-size:  2.6vw;
+    }
+    .subTitle {
+        font-size: 1.5vw;
+    }
+    .subTitle2 {
+        font-size: 1.33vw;
+    }
+    .subTitle3 {
+        font-size: 1.3vw;
+    }
+    .desc {
+        font-size: 1.28vw;
+        text-align: justify;
+    }
+    .desc2 {
+        font-size: 1.1vw;
+    }
+    .desc3 {
+        font-size: 1vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .CentreBlog {
+        padding: 10vw 10%;
+    }
+    .top {
+        height: 25vw;
+    }
+    .head {
+        font-size: 4vw;
+    }
+    .bottom {
+        gap: 2vw;
+        margin-top: 3vw;
+    }
+    .bottomLeft {
+        gap: 1.5vw;
+    }
+    .item img {
+        height: 10vw;
+    }
+    .itemTitle {
+        font-size: 1.5vw;
+    }
+    .itemDesc {
+        font-size: 1.2vw;
+    }
+    .bottomRight {
+        width: 100%;
+    }
+    .subHeading {
+        font-size:  3.3vw;
+    }
+    .subTitle {
+        font-size: 1.65vw;
+    }
+    .subTitle2 {
+        font-size: 1.55vw;
+    }
+    .subTitle3 {
+        font-size: 1.45vw;
+    }
+    .desc {
+        font-size: 1.35vw;
+        text-align: justify;
+    }
+    .desc2 {
+        font-size: 1.3vw;
+    }
+    .desc3 {
+        font-size: 1.25vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top {
+        height: 50vw;
+    }
+    .head {
+        font-size: 7.5vw;
+        text-align: center;
+        left: 0%;
+    }
+    .bottom {
+        flex-direction: column-reverse;
+        margin-top: 5vw;
+    }
+    .bottomLeft, .bottomRight {
+        width: 100%;
+        gap: 5vw;
+    }
+    .mobileBlogs {
+        flex-direction: column;
+    }
+    .mobileBlog {
+        width: 100% !important;
+    }
+    .bottomRight {
+        gap: 2vw !important;
+    }
+    .subHeading {
+        font-size:  4.85vw;
+        text-align: center;
+    }
+    .subTitle {
+        font-size: 4.4vw;
+        text-align: center;
+    }
+    .subTitle2 {
+        font-size: 4vw;
+    }
+    .subTitle3 {
+        font-size: 3.6vw;
+    }
+    .desc {
+        font-size: 3vw;
+        text-align: justify;
+    }
+    .desc2 {
+        font-size: 2.9vw;
+    }
+    .desc3 {
+        font-size: 2.8vw;
+    }
+    .item img {
+        height: 40vw;
+    }
+    .itemTitle {
+        font-size: 4.4vw;
+        margin-top: 2vw;
+    }
+    .itemDesc {
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+}

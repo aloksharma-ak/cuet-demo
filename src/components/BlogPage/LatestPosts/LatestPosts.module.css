@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: #ededed;
+  color: #000;
+  overflow: hidden;
+  border-bottom: 3px solid #000;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.articleContainer {
+  width: 99%;
+  margin-top: 2rem;
+}
+
+.article {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.articlePost {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-shrink: 1; */
+}
+
+.image {
+  width: 24vw;
+  height: 12rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+
+.title a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.articlePost .title {
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+.articlePost .title a {
+    font-size: 1rem;
+}
+
+.title:hover {
+  color: #e3342f;
+}
+
+.details {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.category {
+  font-weight: bold;
+  color: #e3342f;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.details a {
+    color: #e3342f;
+}
+
+.category:hover {
+  color: #cc1f1a;
+}
+
+.date {
+  color: gray;
+}
+
+.sidebar {
+  /* flex-shrink: 1; */
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.newsletter {
+  /* flex-shrink: 1; */
+  margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .article {
+        flex-direction: column;
+    }
+    .imageContainer a, .image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .image {
+        height: 10rem;
+    }
+}

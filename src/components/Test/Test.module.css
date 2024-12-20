@@ -1,0 +1,14 @@
+.test {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: grid;
+    place-items: center;
+    font-size: 6vw;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.test h2 {
+    -webkit-text-stroke: 0.5px aqua;
+}

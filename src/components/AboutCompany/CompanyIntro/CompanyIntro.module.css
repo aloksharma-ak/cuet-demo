@@ -1,0 +1,173 @@
+.CompanyIntro {
+  width: 100%;
+  padding: 6vw 10%;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutContent {
+  width: 45%;
+}
+
+.aboutTitle {
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.2vw;
+}
+
+.aboutText {
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #01b163;
+}
+
+.aboutDesc {
+  font-size: 1vw;
+  margin-top: 1vw;
+}
+
+.aboutSlider {
+  width: 45%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+  margin-top: 2vw;
+}
+
+.btn {
+  flex: 1 1 0;
+  padding: 1vw;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background: #124d51;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  display: grid;
+  place-items: center;
+}
+
+.btn:hover {
+  background: #e07525;
+  transform: scale(0.95);
+}
+
+.bt {
+  color: #fff;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1vw;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutContent {
+    width: 50%;
+  }
+  .aboutTitle {
+    font-size: 4vw;
+  }
+  .aboutDesc {
+    font-size: 1.3vw;
+  }
+  .aboutSlider {
+    height: 300px;
+  }
+  .btn {
+    padding: 1.2vw;
+  }
+  .bt {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CompanyIntro {
+    flex-direction: column;
+    gap: 2vw;
+    padding-top: 7vw;
+  }
+  .aboutContent {
+    width: 100%;
+  }
+  .aboutSlider {
+    width: 100%;
+  }
+  .aboutTitle {
+    font-size: 6vw;
+  }
+  .aboutText {
+    font-size: 4vw;
+  }
+  .aboutDesc {
+    font-size: 1.75vw;
+    margin: 1.5vw 0;
+  }
+  .btn {
+    padding: 2vw;
+    margin: 4vw 0;
+  }
+  .bt {
+    font-size: 1.9vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .CompanyIntro {
+    flex-direction: column;
+    gap: 3vw;
+    padding-top: 8vw;
+  }
+  .aboutContent {
+    width: 100%;
+  }
+  .aboutSlider {
+    width: 100%;
+  }
+  .aboutTitle {
+    font-size: 10vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  .aboutText {
+    width: 100%;
+    font-size: 5.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutDesc {
+    font-size: 3.3vw;
+    text-align: justify;
+    margin: 4vw 0;
+  }
+  .aboutSlider {
+    height: 200px;
+  }
+  .btns {
+    gap: 2vw;
+    margin: 6vw 0;
+  }
+  .btn {
+    padding: 3vw 0;
+  }
+  .bt {
+    font-size: 3vw;
+  }
+}

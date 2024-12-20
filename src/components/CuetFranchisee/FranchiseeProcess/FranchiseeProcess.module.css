@@ -1,0 +1,93 @@
+.FranchiseeProcess {
+  width: 100%;
+  padding: 3vw 10%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2.5vw;
+}
+
+.heading h2 {
+  font-size: 2.5vw;
+  margin-bottom: 2vw;
+}
+
+.heading p {
+  font-size: 1.5vw;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.processList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+  flex-wrap: wrap;
+}
+
+.processItem {
+  width: 32%;
+  height: 16vw;
+  border-radius: 1rem;
+  background-color: #0850532f;
+  padding: 1vw 2vw;
+  margin-bottom: 1.5vw;
+}
+
+.processItem span {
+  font-size: 3vw;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 1.2vw;
+}
+
+.processItem h3 {
+  font-size: 1rem;
+}
+
+.processItem p {
+  font-size: 0.8rem;
+  margin-top: 0.5vw;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .processItem {
+    width: calc(100% / 2 - 1vw);
+    height: 22vw;
+  }
+
+  .processItem p {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading h2 {
+    font-size: 4vw;
+    margin-top: 2rem;
+  }
+  .heading p {
+    font-size: 2.8vw;
+  }
+  .processItem {
+    width: 100%;
+    height: 55vw;
+    padding: 1rem 1.5rem;
+  }
+  .processItemTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .processItemTitle span {
+    font-size: 6vw;
+  }
+  .processItemTitle h3 {
+    text-align: center;
+  }
+}

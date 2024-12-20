@@ -1,0 +1,328 @@
+.counsellingPage {
+    height: 100%;
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0vw 10%;
+    /* overflow-x: hidden; */
+  }
+  
+  .counsellingIntro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0;
+    gap: 2rem;
+  }
+  
+  .counsellingIntroContent {
+    width: 60%;
+  }
+  
+  .introTitle {
+    font-size: 3vw;
+    color: #01b163;
+    font-weight: 550;
+    line-height: 1.4;
+    margin-bottom: 2vw;
+    text-align: justify;
+  }
+  .introTitle span {
+    color: #e07525;
+  }
+  
+  .introDesc {
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 2vw;
+  }
+  
+  .Btn {
+    color: #000;
+    padding: 0.9vw 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    background: linear-gradient(
+      90deg,
+      rgba(40, 113, 114, 1) 0%,
+      rgba(59, 159, 160, 1) 47%,
+      rgba(61, 163, 164, 1) 60%,
+      rgba(122, 201, 202, 1) 100%
+    );
+    transition: all 0.5s ease;
+  }
+  
+  .Btn:is(:hover, :focus, :active) {
+    background: linear-gradient(
+      90deg,
+      rgba(122, 201, 202, 1) 0%,
+      rgba(61, 163, 164, 1) 47%,
+      rgba(59, 159, 160, 1) 60%,
+      rgba(40, 113, 114, 1) 100%
+    );
+    transform: scale(0.9);
+  }
+  
+  .counsellingIntroImage {
+    width: 35%;
+  }
+  
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+  
+  /* Why Container */
+  
+  .whyContainer {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+  
+  .description {
+    font-size: 1vw;
+    margin-bottom: 3vw;
+  }
+  
+  .benefitCard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .benefitCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 255, 255, 0.43);
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .benefitIcon {
+    width: 4vw;
+    height: 4vw;
+    background-color: #039887;
+    padding: 0.8vw;
+    border-radius: 50%;
+  }
+  
+  .benefitCardContentText {
+    text-align: center;
+  }
+  
+  .benefitCardContentHead {
+    font-size: 1.1vw;
+    font-weight: 500;
+  }
+  
+  .benefitCardContentPara {
+    text-align: justify !important;
+    font-size: 0.8vw;
+    font-weight: 300;
+  }
+  
+  .btn {
+    margin: 3vw 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    
+    .benefitCardContent {
+      padding: 0.8rem;
+    }
+    .benefitCardContentHead {
+      font-size: 1vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .benefitCardContent {
+      padding: 0.8rem;
+    }
+    .benefitCard {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+    .benefitCardContentHead {
+      font-size: 1.8vw;
+    }
+    .benefitCardContentPara {
+      font-size: 1.3vw;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .counsellingPage {
+      padding: 5vw 5%;
+    }
+    .counsellingIntro {
+      flex-direction: column;
+      gap: 8vw;
+      margin-top: 6vw;
+    }
+    .counsellingIntroContent {
+      width: 100%;
+    }
+    .introTitle {
+      font-size: 5.7vw;
+      text-align: center;
+      margin-bottom: 4vw;
+    }
+    .introDesc {
+      font-size: 3vw;
+      text-align: justify;
+    }
+    .Btn {
+      font-size: 2.8vw;
+      padding: 0.7rem 2rem;
+      margin: 1.5rem auto 0;
+    }
+    .counsellingIntroImage {
+      width: 100%;
+    }
+    .title {
+      font-size: 4.9vw;
+      margin-bottom: 2.5vw;
+    }
+    .description {
+      font-size: 2.8vw;
+      text-align: justify;
+      margin-bottom: 5.5vw;
+    }
+    .benefitCard {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .benefitCardContent {
+      padding: 0.8rem;
+    }
+    .benefitIcon {
+      width: 15vw;
+      height: 15vw;
+      padding: 3vw;
+    }
+    .benefitCardContentHead {
+      font-size: 4vw;
+    }
+    .benefitCardContentPara {
+      font-size: 2.8vw;
+    }
+  }
+  
+  
+  
+  .counselingServices {
+    background-color: #082320;
+    width: 100%;
+    text-align: center;
+    padding: 3vw 0;
+  }
+  
+  .plusContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1vw;
+    text-align: left !important;
+    margin-top: 2rem;
+  }
+  
+  .plusCard {
+    width: 50%;
+    background: #113B2A;
+    padding: 1.5vw;
+    border-radius: 1rem;
+    border: 1px solid #164e37;
+  }
+  
+  .cardTitle {
+    font-size: 2.2vw;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .orangeText {
+    color: #e07525;
+  }
+  
+  .cardDescription {
+    font-size: 0.885vw;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+  
+  .subTitle {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .subDescription {
+    font-size: 1vw;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+  
+  .list {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .list li {
+    list-style: disc;
+    font-size: 0.95vw;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .serviceTitle {
+      font-size: 7vw;
+    }
+    .plusContainer {
+      flex-direction: column;
+    }
+    .plusCard {
+      width: 100%;
+    }
+    .cardTitle, .subTitle {
+      font-size: 5vw;
+    }
+    .cardDescription, .subDescription {
+      font-size: 3vw;
+    }
+    .list li {
+      font-size: 3vw;
+      text-align: justify;
+    }
+  }
+  
+  
+  
+  .readyContainer {
+    text-align: center;
+  }

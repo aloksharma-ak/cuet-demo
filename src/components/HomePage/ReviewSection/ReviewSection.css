@@ -1,0 +1,246 @@
+.section-review {
+  width: 100%;
+  padding: 2vw 12%;
+}
+
+.section-review h2 {
+  font-size: 3.3vw;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2vw;
+}
+
+.review-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.review-left {
+  width: 60%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+
+.review-card {
+  padding: 1.3vw 1.5vw;
+  border-radius: 1vw;
+  background-color: #092225;
+  border: 1px solid #888;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.review-card .student-details {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+
+.review-card .student-details .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review-card .student-details .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-card .student-details h3 {
+  font-size: 1.1vw;
+}
+
+.review-card h4,
+.review-card p {
+  font-size: 1vw;
+}
+
+.review-card p {
+  line-height: 1.3;
+  margin-top: 0.5vw;
+}
+
+.border-color {
+  border-color: #07ff74;
+}
+
+.review-right {
+  width: 37%;
+  /* min-height: 80vh; */
+  position: sticky;
+  right: 0;
+  top: 5vw;
+}
+
+.review-card-right {
+  padding: 2.2vw;
+  border-radius: 1vw;
+  background-color: #092225;
+  border: 1px solid #888;
+  box-shadow: rgba(211, 224, 229, 0.12) 0px 2px 4px,
+    rgba(202, 208, 210, 0.32) 0px 2px 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.review-card-right .student-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  margin-bottom: 1.5vw;
+}
+
+.review-card-right .student-details .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #07ff74;
+}
+
+.review-card-right .student-details .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.review-card-right .student-details h3 {
+  font-size: 1.5vw;
+}
+
+.review-card-right h4,
+.review-card-right p {
+  font-size: 1vw;
+}
+
+.review-card-right p {
+  line-height: 1.3;
+  margin-top: 0.5vw;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .review-right {
+    top: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-review {
+    padding: 2vw 5%;
+  }
+
+  .section-review h2 {
+    font-size: 3.8vw;
+    margin-bottom: 4vw;
+  }
+
+  .review-card h4,
+  .review-card p,
+  .review-card-right h4,
+  .review-card-right p {
+    font-size: 1.3vw;
+  }
+
+  .review-card .student-details h3,
+  .review-card-right .student-details h3 {
+    font-size: 1.3vw;
+  }
+
+  .review-card-right .student-details .img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-left {
+    width: 96%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4vw;
+  }
+
+  .review-right {
+    display: none;
+  }
+
+  .section-review {
+    padding: 7vw 3%;
+  }
+
+  .section-review h2 {
+    font-size: 7vw;
+    margin-bottom: 6vw;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  .review-card {
+    padding: 6vw;
+    border-radius: 5vw;
+    border-color: #88888858;
+    transition: all 0.3s ease-in-out;
+
+    &:is(:hover, :focus, :active) {
+      border-color: rgba(0, 255, 255, 0.589);
+      transform: scale(1.05);
+    }
+  }
+
+  .review-card .student-details h3 {
+    font-size: 5.5vw;
+    font-weight: 500;
+  }
+
+  .review-card h4 {
+    font-size: 3.7vw;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.8vw;
+  }
+
+  .review-card p {
+    font-size: 3.3vw;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  .review-card .student-details {
+    gap: 3vw;
+    margin-bottom: 1.5vw;
+    flex-direction: column;
+  }
+
+  .review-card .student-details .img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .review-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+  }
+}

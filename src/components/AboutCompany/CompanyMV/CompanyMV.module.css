@@ -1,0 +1,100 @@
+.CompanyMV {
+  width: 100%;
+  background-color: #07271b;
+  padding: 4vw 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textContainer {
+  width: 50%;
+}
+
+.textContainer .subTitle {
+  font-size: 1vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.textContainer .title {
+  font-size: 2.45vw;
+  color: #01b163;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textContainer .description {
+  font-size: 1vw;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.textContainer .description span {
+  color: #e07525;
+}
+
+.btnContainer {
+  font-size: 1vw;
+  padding: 0.5rem 2rem;
+  background-color: rgb(16, 79, 79);
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnContainer:hover {
+    background-color: #e07525;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.image {
+  width: 45%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer .title {
+    font-size: 1.1vw;
+    margin-bottom: 0.8rem;
+  }
+  .textContainer .description {
+    font-size: 1.1vw;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .CompanyMV {
+        padding: 8vw 10%;
+    }
+  .image {
+    display: none;
+  }
+  .textContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .textContainer .subTitle {
+    font-size: 3vw;
+    margin-bottom: 0.8rem;
+  }
+  .textContainer .title {
+    font-size: 9vw;
+    margin-bottom: 0.8rem;
+  }
+  .textContainer .description {
+    font-size: 3.3vw;
+    margin-bottom: 0.8rem;
+  }
+  .btnContainer {
+    width: 100%;
+    font-size: 3vw;
+    padding: 0.8rem;
+  }
+}

@@ -1,0 +1,294 @@
+/* Base styles for larger screens */
+.introSection {
+  width: 100%;
+  max-width: 100%;
+  padding: 5vw 10% 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5vw;
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 4rem;
+}
+
+.introContent {
+  width: 74%;
+  max-width: 1200px;
+}
+
+.introHeading {
+  width: 100%;
+}
+
+.introHeading .introTitle {
+  color: rgb(1, 177, 99);
+  font-size: 4.8vw;
+  line-height: 1.1;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.introHeading .introSubTitle {
+  font-size: 3vw;
+  font-weight: 550;
+  margin: 0.6vw 0;
+}
+
+.introContent p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.3;
+  opacity: 0.8;
+}
+
+.introSlider {
+  cursor: grab !important;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5vw;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  border-radius: 50%;
+  color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.swiperButtonPrev:is(:hover, :focus, :active),
+.swiperButtonNext:is(:hover, :focus, :active) {
+  background-color: #45a884;
+  color: #082319;
+}
+
+.swiperButtonPrev {
+  left: 1.5vw;
+}
+
+.swiperButtonNext {
+  right: 1.5vw;
+}
+
+.introBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+  margin-top: 1vw;
+}
+
+.roundedBtn {
+  color: #fff;
+  padding: 0.9vw 2vw;
+  font-size: 1vw;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  background: #124d51;
+  transition: all 0.5s ease;
+}
+
+.roundedBtn:is(:hover, :focus, :active) {
+  background: #e07525;
+  transform: scale(0.9);
+}
+
+.overlayDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.overlayDiv .cf {
+  position: relative;
+  z-index: 11;
+}
+
+.overlayForm {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.introContactForm {
+  transition: all 0.5s ease;
+}
+
+.introContactForm:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+
+/* For tablets and smaller laptops (max-width 1024px) */
+@media (max-width: 1024px) {
+  .introSection {
+    padding: 4vw 8%;
+  }
+
+  .introContent {
+    width: 60%;
+  }
+
+  .introHeading .introTitle {
+    font-size: 4vw;
+  }
+
+  .introHeading .introSubTitle {
+    font-size: 2.5vw;
+  }
+
+  .introContent p {
+    font-size: 1.2vw;
+  }
+
+  .roundedBtn {
+    padding: 1.2vw 2.5vw;
+    font-size: 1.1vw;
+  }
+
+  .overlayDiv {
+    padding: 2rem;
+  }
+}
+
+/* For tablets and larger mobile devices (max-width 768px) */
+@media (max-width: 768px) {
+  .introSection {
+    padding: 5vw 6%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 3rem;
+  }
+
+  .introContent {
+    width: 90%;
+  }
+
+  .introHeading .introTitle {
+    font-size: 5vw;
+  }
+
+  .introHeading .introSubTitle {
+    font-size: 3vw;
+  }
+
+  .introContent p {
+    font-size: 1.5vw;
+  }
+
+  .roundedBtn {
+    padding: 1.5vw 3vw;
+    font-size: 1.2vw;
+  }
+
+  .swiperButtonPrev,
+  .swiperButtonNext {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .introContactFormContainer {
+    display: none;
+  }
+}
+
+/* For mobile phones (max-width 480px) */
+@media (max-width: 480px) {
+  .introSection {
+    min-height: 55vh;
+    padding: 10vw 4% 11vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 5rem;
+  }
+
+  .introContent {
+    width: 100%;
+  }
+
+  .introHeading .introTitle {
+    font-size: 8.5vw;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+  .introHeading .introSubTitle {
+    font-size: 5.8vw;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+  .introContent p {
+    font-size: 2.9vw;
+    text-align: justify;
+    letter-spacing: normal;
+    margin-bottom: 7vw;
+  }
+
+  .introBtn {
+    margin-top: 8vw;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .roundedBtn {
+    padding: 3vw 4vw;
+    font-size: 3.1vw;
+    width: 46%;
+  }
+
+  .roundedBtn svg {
+    font-size: 4vw;
+  }
+
+  .swiperButtonPrev,
+  .swiperButtonNext {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .introContactFormContainer {
+    display: none;
+  }
+}

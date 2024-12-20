@@ -1,0 +1,167 @@
+/* Container Styles */
+.container {
+  text-align: center;
+  padding: 3vw 10%;
+  color: white;
+}
+
+/* Heading Styles */
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Section Layout */
+.benefitsSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.column:first-child {
+  width: 60%;
+}
+
+.column:last-child {
+  width: 40%;
+}
+
+/* Subheading Styles */
+.subHeading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Card Container */
+.cardContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 1vw;
+}
+
+/* Individual Card Styles */
+.card {
+  background-color: #092225;
+  border-radius: 10px;
+  padding: 1vw;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(187, 206, 211, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(187, 206, 211, 0.4);
+  transform: translateY(-8px);
+}
+
+/* Icon Styles */
+.img {
+  width: 3vw;
+  border-radius: 50%;
+}
+
+/* Title Styles */
+.title {
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Description Styles */
+.description {
+  font-size: 0.9vw;
+  font-weight: 300;
+  color: #c5e1a5;
+}
+
+.column:first-child .cardContainer .card {
+  width: calc(100% / 4 - 0.5vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+
+.column:last-child .cardContainer {
+  flex-direction: column;
+  gap: 0;
+}
+
+.column:last-child .cardContainer .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  background: transparent;
+  box-shadow: none;
+  padding: 0.9vw;
+}
+
+.column:last-child .cardContainer .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+}
+
+@media screen and (max-width: 768px) {
+  .benefitsSection {
+    flex-direction: column;
+  }
+  .column {
+    width: 100% !important;
+  }
+  .title {
+    font-size: 2vw;
+  }
+  .description {
+    font-size: 1.5vw;
+  }
+  .img {
+    width: 6vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 10vw;
+  }
+  .subHeading {
+    font-size: 7.5vw;
+  }
+  .cardContainer {
+    flex-direction: column !important;
+    gap: 3vw;
+  }
+  .card {
+    width: 100% !important;
+    padding: 3vw;
+  }
+  .column {
+    width: 100% !important;
+  }
+  .title {
+    font-size: 4.9vw;
+  }
+  .description {
+    font-size: 3.3vw;
+  }
+  .column:first-child .cardContainer .card {
+    gap: 3vw;
+  }
+  .column:last-child .cardContainer .card {
+    gap: 3vw;
+    align-items: flex-start;
+  }
+  .column:last-child .cardContainer .card .content {
+    text-align: left;
+  }
+  .img {
+    width: 10vw;
+    margin-top: 1.5vw;
+  }
+}

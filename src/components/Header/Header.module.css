@@ -1,0 +1,112 @@
+/* Navbar wrapper */
+.wrapperDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Ensure the header is clickable */
+.header {
+  pointer-events: auto;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.navbarMenuList {
+  display: flex;
+  gap: 2vw;
+}
+
+/* Responsive styles */
+.navbarBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  padding: 1vw 0;
+}
+
+.navbarBrandSection {
+  display: flex;
+  gap: 1vw;
+}
+
+.logo {
+  width: 13vw;
+}
+
+.mobileLoginBtn {
+  display: none !important;
+}
+
+/* Navbar Menu List Overlay */
+.navbarMenuListOverlay {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0s linear 0.4s;
+}
+
+.navbarMenuListOverlayActive {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.navbarToggle {
+  display: none;
+  overflow: hidden;
+}
+
+.navbarToggler {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 3%;
+  }
+  .navbarMenuList {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navbar {
+    height: 8rem;
+  }
+}

@@ -1,0 +1,47 @@
+.mobileBottomMenu {
+  display: none; /* Hide menu by default */
+  justify-content: space-around; /* Distribute buttons evenly */
+  background-color: hsl(0, 0%, 0%); /* White background */
+  padding: 0.5rem; /* Add padding around the menu */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.mobileBottomBtn {
+  width: calc(100% / 3); /* Set button width */
+  font-size: 0.65rem; /* Set font size */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items */
+  gap: 0.2rem; /* Add gap between items */
+  border: none; /* Remove default border */
+  background: none; /* Remove default background */
+  cursor: pointer; /* Change cursor to pointer */
+  text-align: center; /* Center text */
+}
+
+.mobileBottomBtn:hover {
+  opacity: 0.8; /* Slightly fade button on hover */
+}
+
+.mobileBottomBtnIcon {
+  width: 22px; /* Set icon width */
+  height: 22px; /* Set icon height */
+}
+
+@media screen and (max-width: 480px) {
+  .mobileBottomMenu {
+    display: flex; /* Show menu on small screens */
+  }
+}
+
+.mobileBottomBtn a {
+  display: grid;
+  place-items: center;
+  gap: 1vw;
+}

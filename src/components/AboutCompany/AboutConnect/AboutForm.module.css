@@ -1,0 +1,203 @@
+.aboutForm {
+    width: max-content;
+    background: #0C3626;
+    padding: 1.5vw;
+    border-radius: 15px;
+} 
+
+.mobileLogo {
+  display: none;
+}
+
+.title {
+  font-size: 1.8vw;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #082319;
+  -webkit-text-stroke: 0.3px #fff;
+}
+
+.desc {
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0.5vw 0 0.3vw;
+    text-transform: capitalize;
+}
+
+.desc2 {
+    font-size: 0.6vw;
+    font-weight: 300;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0.5vw 0 1vw;
+    white-space: nowrap;
+}
+
+.form {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 255, 255, 0.242);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.form:hover {
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.242);
+  border-color: aqua;
+  transform: scale(1.05);
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #062a2e;
+  border-radius: 6px;
+  outline: none;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 400;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+.inputBox input[type="email"] {
+  text-transform: lowercase;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 0.9rem;
+  pointer-events: none;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+  color: #00dfc4;
+  transform: translate(10px, -7px);
+  font-size: 0.65em;
+  padding: 0 0.5rem;
+  background: #062a2e;
+}
+
+.inputBox input:focus,
+.inputBox input:valid,
+.inputBox textarea:focus,
+.inputBox textarea:valid {
+  border-color: #00dfc4;
+}
+
+.inputMessage {
+  width: 97.5%;
+}
+
+.inputMessage textarea {
+  max-width: 100%;
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #062a2e;
+  border-radius: 6px;
+  outline: none;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: 0.5s;
+  min-height: 100px;
+}
+
+.inputButton {
+  width: 97.5%;
+}
+
+.button {
+  padding: 0.5rem 1.6rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #062a2e;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button:is(:hover, :focus, :active) {
+  color: #032214;
+  background: #e07525;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutForm {
+        /* width: 40%; */
+        padding: 2vw;
+    }
+    .desc2 {
+        font-size: 0.95vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutForm {
+        /* width: 55%; */
+        padding: 3vw;
+    }
+    .desc2 {
+        font-size: 1.3vw;
+    }
+    .title {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutForm {
+        width: 100%;
+        padding-bottom: 5vw;
+        margin-top: 10rem;
+    }
+    .desc {
+        margin: 4vw 0 1vw;
+    }
+    .desc2 {
+        font-size: 3vw;
+        margin: 1vw 0 5vw;
+        white-space: normal;
+    }
+    .title {
+        font-size: 8vw;
+        display: none;
+    }
+    .mobileLogo {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.5rem 0 1rem;
+      border-bottom: 2px solid #f1f1f1;
+    }
+}

@@ -1,0 +1,168 @@
+#HomeStreamCareer {
+  padding: 4vw 11%;
+  background-color: #071A13;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+#HomeStreamCareer .streamCareerTitle {
+  font-size: 1.3vw;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 0.5vw;
+}
+
+#HomeStreamCareer .streamCareerTitle span {
+  font-size: 2.6vw;
+  font-weight: 700;
+}
+
+#HomeStreamCareer .streamCareerLink {
+  font-size: 1.8vw;
+  text-align: center;
+  margin-top: 0.4vw;
+}
+
+#HomeStreamCareer .streamCareerLink .link {
+  color: #e07525;
+}
+
+#HomeStreamCareer .streamCareerDiv {
+  width: 45%;
+}
+
+.cardDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#HomeStreamCareer .card {
+  width: calc(100% / 2.1);
+  height: 5vw;
+  background-color: #065e61;
+  padding: 0.8vw;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.2vw;
+  position: relative;
+}
+
+#HomeStreamCareer .card h5 {
+  font-size: 0.7vw;
+  font-weight: 400;
+}
+
+#HomeStreamCareer .floatingDiv {
+  width: 100%;
+  position: absolute;
+  top: -2vw;
+  left: 0;
+  text-align: center;
+  padding: 0 1vw;
+  animation: floatingAnimation 5s ease-in-out infinite;
+}
+
+#HomeStreamCareer .floatingDiv .floatingText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  font-weight: 400;
+  background-color: #e07525;
+  border-radius: 1rem;
+}
+
+#HomeStreamCareer .floatingDiv p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin-top: 0.2vw;
+  text-transform: capitalize;
+}
+
+#HomeStreamCareer .floatingDiv p span {
+  color: #e07525;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  #HomeStreamCareer {
+    padding: 6vw 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #HomeStreamCareer {
+    padding: 8vw 5%;
+    gap: 3.5vw;
+  }
+  #HomeStreamCareer .streamCareerTitle {
+    font-size: 1.65vw;
+  }
+  #HomeStreamCareer .streamCareerTitle span {
+    font-size: 3.2vw;
+  }
+  #HomeStreamCareer .streamCareerDiv {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #HomeStreamCareer {
+    padding: 8vw 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #HomeStreamCareer .streamCareerTitle {
+    width: 100%;
+    font-size: 2.95vw;
+    margin-bottom: 6vw;
+    text-align: center;
+  }
+  #HomeStreamCareer .streamCareerTitle span {
+    font-size: 5.8vw;
+  }
+  #HomeStreamCareer .streamCareerLink {
+    font-size: 3vw;
+    margin-top: 6vw;
+  }
+  #HomeStreamCareer .streamCareerDiv {
+    width: 100%;
+  }
+  #HomeStreamCareer .card {
+    width: calc(100% / 2.3);
+    height: 15vw;
+    padding: 1.5vw;
+  }
+  #HomeStreamCareer .card h5 {
+    font-size: 1.8vw;
+  }
+  #HomeStreamCareer .floatingDiv {
+    top: -4vw;
+  }
+  #HomeStreamCareer .floatingDiv .floatingText {
+    font-size: 5vw;
+  }
+  #HomeStreamCareer .floatingDiv p {
+    font-size: 2.2vw;
+    margin-top: 1vw;
+  }
+}

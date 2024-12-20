@@ -1,0 +1,158 @@
+.homeBlogLink {
+  padding: 5vw 10% 4vw;
+  background-color: #0d211a;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left {
+  width: 55%;
+  padding: 0 2rem 2rem 0;
+}
+
+.heading {
+    font-size: 5vw;
+    line-height: 1;
+    margin-bottom: 3.3rem;
+}
+
+.imageDiv {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9220938375350141) 8%,
+    rgba(0, 0, 0, 0.7484243697478992) 44%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  font-size: 2.5vw;
+  line-height: 1.3;
+  font-weight: bold;
+  display: flex;align-items: center;
+  padding: 2rem;
+}
+
+.title {
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 1vw;
+
+}
+
+.right {
+  width: 45%;
+  padding: 0rem 0 0rem 2rem;
+  margin-top: 1rem;
+  border-left: 1px solid #555;
+}
+
+.card {
+    padding: 2rem 0;
+    border-bottom: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.cardTitle {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.cardImg {
+    width: 8vw;
+    border-radius: 3px;
+}
+
+.card:first-child {
+    border-top: 1px solid #555;
+}
+
+.LatestUpdateDivMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .homeBlogLink {
+        padding-bottom: 0;
+    }
+    .LatestUpdateDiv {
+        display: none;
+    }
+
+    .LatestUpdateDivMobile {
+        display: block;
+    }
+
+    .image {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homeBlogLink {
+        flex-direction: column;
+        padding: 3vw 5% 4vw;
+        gap: 1rem;
+    }
+    .left {
+        width: 100%;
+        padding: 2rem 0 0;
+    }
+    .heading {
+        font-size: 8vw;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .image {
+        height: 200px;
+    }
+    .imageOverlay {
+        font-size: 5vw;
+    }
+    .title {
+        font-size: 8vw;
+        text-align: center;
+    }
+    .right {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 1.5rem;
+    }
+    .card {
+        padding: 1rem 0;
+    }
+    .cardTitle {
+        font-size: 3.5vw;
+    }
+    .cardImg {
+        width: 22vw;
+    }
+
+    
+}

@@ -1,0 +1,36 @@
+.achievement {
+    padding: 3vw 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subHeading {
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.heading {
+    color: #01b163;
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 1vw 0;
+}
+
+@media screen and (max-width: 480px) {
+    .achievement {
+        padding: 8vw 10%;
+    }
+    .subHeading {
+        font-size: 3vw;
+    }
+    
+    .heading {
+        font-size: 5.9vw;
+        text-align: center;
+        margin: 1.5vw 0;
+    }
+}

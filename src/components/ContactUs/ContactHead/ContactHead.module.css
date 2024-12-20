@@ -1,0 +1,24 @@
+.heading {
+    margin-top: 4rem;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding: 5vw 10%;
+    background: #000;
+    color: #e07525;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        margin-top: 3rem;
+        font-size: 5vw;
+        padding: 12vw 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 9vw;
+    }
+}

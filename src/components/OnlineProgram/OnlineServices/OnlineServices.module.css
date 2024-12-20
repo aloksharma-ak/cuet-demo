@@ -1,0 +1,122 @@
+.onlineServices {
+  width: 100%;
+  height: 40vw;
+  position: relative;
+}
+
+.onlineServices > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.onlineServicesContent {
+  width: 100%;
+  height: 100%;
+  padding: 3vw 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(8, 35, 25, 0.927);
+}
+
+.onlineServicesContent h2 {
+  font-size: 1.8vw;
+  margin-bottom: 2vw;
+}
+
+.boxList {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  padding: 3vw 1.5vw;
+  border: 1px solid rgba(0, 255, 255, 0.422);
+  border-radius: 2vw;
+  background-color: #124a2a98;
+  transition: all 0.3s ease-in-out;
+}
+
+.box img {
+  width: 3vw;
+}
+
+.box h3 {
+  font-size: 1vw;
+  text-align: center;
+}
+
+.box p {
+  font-size: 0.8vw;
+  text-align: center;
+}
+
+.box:is(:hover, :focus, :active) {
+  border-color: aqua;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.slideImg {
+  width: 25%;
+  position: absolute;
+  top: 0;
+  right: 6%;
+}
+
+@media screen and (max-width: 768px) {
+  .onlineServices {
+    height: 55vw;
+  }
+  .onlineServicesContent h2 {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+  }
+  .slideImg {
+    top: 20%;
+  }
+  .box img {
+    width: 4vw;
+  }
+  .box h3 {
+    font-size: 1.3vw;
+  }
+  .box p {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .onlineServices {
+    height: 115vw;
+  }
+  .onlineServicesContent {
+    padding: 10vw 10%;
+  }
+  .slideImg {
+    display: none;
+  }
+  .boxList {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+  }
+  .box img {
+    width: 10vw;
+  }
+  .box h3 {
+    font-size: 2.8vw;
+  }
+  .box p {
+    font-size: 2vw;
+  }
+}

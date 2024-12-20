@@ -1,0 +1,126 @@
+.cuetContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+}
+.menuDropHeader {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.menuItem {
+  width: 100%;
+  min-width: 12vw;
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 1vw 1.5vw;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menuItem:is(:hover, :focus, :active) {
+  background-color: #282932;
+}
+
+.menuItem:active {
+  background-color: #26272d;
+}
+
+.menuItem.selected {
+  color: #e07525;
+}
+
+.bgDarkGray {
+  background-color: #26282d;
+}
+.bgLightGray {
+  background-color: #2c2d31;
+}
+
+.courseContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.cuetScholar {
+  width: calc(100% / 3);
+}
+
+.coursesSmall {
+  width: calc(100% / 3);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 8px;
+  padding-top: 10px;
+}
+
+.card {
+  width: 100%;
+  background-color: #222;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.viewButton {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  font-size: 0.5rem;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.title {
+  color: #01b163;
+  font-size: 0.6vw;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.description {
+  color: #dadada;
+  font-size: 0.4vw;
+  font-weight: 300;
+  text-align: justify;
+  margin: 3px 5px 1px;
+}
+
+.students {
+  font-size: 0.87vw;
+  font-weight: 500;
+  margin: 1px 5px;
+}
+
+.cuetImg {
+  width: calc(100% / 3);
+}

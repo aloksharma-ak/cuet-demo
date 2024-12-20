@@ -1,0 +1,88 @@
+.ContactNewLatter {
+  padding: 3vw 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewsCard {
+  max-width: 700px;
+  min-width: 700px;
+  padding: 2.5vw 3.5vw;
+  background-color: #6bc4a61b;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.NewsCardDesc {
+  font-size: 1vw;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.NewsCardTitle {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-top: 1vw;
+}
+
+.NewsCardTitle span {
+  color: #e07525;
+}
+
+.NewsCardBtn {
+  border: none;
+  outline: none;
+  padding: 0.8vw 1.8vw;
+  border-radius: 10px;
+  font-size: 0.9vw;
+  font-weight: 600;
+  background: #21686c;
+  transition: all 0.3s ease-in-out;
+}
+
+.NewsCardBtn:hover {
+  background: #e07525;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .NewsCard {
+    max-width: 600px;
+    min-width: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ContactNewLatter {
+    padding: 5vw 5%;
+  }
+  .NewsCard {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem 1.2rem;
+    gap: 3vw;
+  }
+  .NewsCardDesc {
+    font-size: 3.3vw;
+  }
+  .NewsCardTitle {
+    font-size: 6.5vw;
+    margin-top: 2vw;
+  }
+  .btn {
+    width: 100%;
+  }
+  .NewsCardBtn {
+    width: 100%;
+    padding: 3.5vw;
+    font-size: 4vw;
+    color: #fff;
+  }
+}

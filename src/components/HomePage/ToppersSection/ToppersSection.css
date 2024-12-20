@@ -1,0 +1,165 @@
+/* Section Container */
+.toppers-section {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3vw 12%;
+  padding-left: 17%;
+  background-color: #002f6c;
+}
+.toppers-section .topper-container {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Section Heading */
+
+.toppers-section .heading {
+  max-width: 18%;
+}
+
+.toppers-section h2 {
+  font-size: 1.4vw;
+  margin-bottom: 1vw;
+}
+
+/* Section Description */
+.toppers-section p {
+  opacity: 0.7;
+  font-size: 0.75vw;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2em;
+}
+
+/* Success Stories Container */
+.toppers-section .stories-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.toppers-section .card {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8vw;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 5px;
+}
+
+.toppers-section .card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual Success Story Card */
+.toppers-section .success-story {
+  flex: 0 0 32%;
+  height: 20vw;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0.6vw;
+  padding: 0.9vw;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Hover Effect for Story Card */
+.toppers-section .success-story:is(:hover, :focus, :active) {
+  transform: translateY(-5px);
+}
+
+/* Profile Image Styling */
+.toppers-section .profile-image {
+  width: 6vw;
+}
+
+/* Story Content */
+.toppers-section .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8vw;
+}
+
+/* Story Text */
+.toppers-section .story-text {
+  font-size: 0.8vw;
+  line-height: 1.2;
+}
+
+/* Author Section */
+.toppers-section .author {
+  font-style: italic;
+}
+
+/* Read More Button */
+.toppers-section .read-more {
+  color: #002f6c;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.9vw;
+  transition: all 0.5s ease;
+}
+
+.toppers-section .read-more:is(:hover, :focus, :active) {
+  background-color: #004080;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+
+.toppers-section .connect-now {
+  background-color: transparent; 
+  color: white;
+  border: 1px solid white; 
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 1em; 
+}
+
+.toppers-section .connect-now:is(:hover, :focus, :active) {
+  background-color: white; 
+  color: #002f6c; 
+}
+
+
+.toppers-section .navigation {
+  margin-top: 1em; 
+}
+
+.toppers-section .prev,
+.toppers-section .next {
+  background-color: transparent;
+  color: white; 
+  border: none; 
+  padding: 0.5em 1em;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 1.5em; 
+  transition: background-color 0.3s;
+}
+
+.toppers-section .prev:is(:hover, :focus, :active),
+.toppers-section .next:is(:hover, :focus, :active) {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+

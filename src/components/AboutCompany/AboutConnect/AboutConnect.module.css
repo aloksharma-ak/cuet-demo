@@ -1,0 +1,243 @@
+.AboutConnect {
+  width: 100%;
+  padding: 3vw 10%;
+}
+
+.AboutConnectTitle {
+  font-size: 3vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+.AboutConnectDesc {
+  font-size: 1vw;
+  font-weight: 300;
+  text-align: center;
+  margin: 1vw;
+}
+
+.AboutConnectContact {
+  width: 100%;
+  margin: 3vw auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.student,
+.partner {
+  width: 50%;
+  border-radius: 16px;
+  background-color: #e07525;
+  position: relative;
+  overflow: hidden;
+}
+
+.studentImg,
+.partnerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  display: none;
+}
+
+.studentContent,
+.partnerContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  width: 15.53vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  background: #0c3626;
+  border-radius: 15px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.location:hover {
+  transform: scale(0.95);
+  color: #e07525;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.icon {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon svg {
+  font-size: 1vw;
+  color: #082319;
+}
+
+.iconText {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.desc {
+  font-size: 0.9vw;
+  font-weight: 300;
+}
+
+.location:hover .icon {
+  background-color: #e07525;
+}
+
+@media screen and (max-width: 1024px) {
+  .AboutConnectTitle {
+    font-size: 3vw;
+  }
+  .AboutConnectDesc {
+    font-size: 1.3vw;
+  }
+  .AboutConnectContact {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .student,
+  .partner {
+    width: 100%;
+  }
+  .iconText {
+    font-size: 1.8vw;
+  }
+  .box {
+    width: 20vw;
+  }
+  .desc {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AboutConnectTitle {
+    font-size: 4.5vw;
+  }
+  .AboutConnectDesc {
+    font-size: 1.75vw;
+  }
+  .iconText {
+    font-size: 2.2vw;
+  }
+  .icon {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  .icon svg {
+    font-size: 2.5vw;
+  }
+  .box {
+    width: 29vw;
+    padding: 3vw;
+  }
+  .desc {
+    font-size: 1.75vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .AboutConnectContact {
+    gap: 4vw;
+  }
+  .AboutConnectTitle {
+    font-size: 8vw;
+  }
+  .AboutConnectDesc {
+    font-size: 3.3vw;
+    margin: 2vw auto 8vw;
+  }
+  .studentContent,
+  .partnerContent {
+    gap: 1rem;
+  }
+  .studentContent {
+    flex-direction: column-reverse;
+  }
+  .partnerContent {
+    flex-direction: column;
+  }
+  .student,
+  .partner {
+    width: 100%;
+  }
+  .box {
+    width: 100% !important;
+    gap: 5vw;
+    padding: 7vw 8vw;
+    display: none;
+  }
+  .location {
+    gap: 3vw;
+  }
+  .iconBox {
+    gap: 4vw;
+  }
+  .icon {
+    width: 12vw;
+    height: 12vw;
+  }
+  .icon svg {
+    font-size: 6.5vw;
+  }
+  .iconText {
+    font-size: 5.5vw;
+  }
+  .desc {
+    font-size: 3.3vw;
+  }
+  .studentImg,
+  .partnerImg {
+    height: 50vw;
+  }
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #082319;
+    -webkit-text-stroke: 0.3px #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}

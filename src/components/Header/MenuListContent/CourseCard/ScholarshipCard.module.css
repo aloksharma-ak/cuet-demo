@@ -1,0 +1,82 @@
+.container {
+  background-color: #212121;
+  color: white;
+  padding: 0.5vw 0.8vw;
+  border-radius: 2vw;
+  text-align: center;
+  max-width: 50vw;
+  margin-top: 5px;
+  border: 3px dashed #ccc;
+}
+
+.scholarshipTag {
+  background-color: #e63946;
+  color: white;
+  display: inline-block;
+  padding: 0.2vw 2vw;
+  font-size: 0.7vw;
+  font-weight: 400;
+  border-radius: 2vw;
+}
+
+.title {
+  font-size: 1.5vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0.2vw 0;
+}
+
+.tagline {
+  font-size: 0.8vw;
+  font-weight: 300;
+  background-color: #3a5a40;
+  padding: 0.2vw 2vw;
+  border-radius: 2vw;
+  display: inline-block;
+}
+
+.program, .class, .description, .enroll {
+  margin: 0.1vw 0;
+  font-size: 0.6vw;
+  font-weight: 200;
+}
+
+.program {
+  font-weight: 500;
+}
+
+.class {
+  font-weight: 400;
+}
+
+.description {
+  text-align: justify;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.details li {
+  margin: 0.1vw 0;
+  font-size: 0.6vw;
+}
+
+.enrollButton {
+  background-color: #f4a261;
+  color: white;
+  padding: 0.2vw 1vw;
+  border: none;
+  border-radius: 2vw;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.enrollButton:hover {
+  background-color: #e76f51;
+  transform: scale(0.95);
+  color: #000;
+}

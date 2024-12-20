@@ -1,0 +1,132 @@
+.TermAndConditionsHero {
+  width: 100%;
+  padding: 3em 10%;
+  margin-top: 4rem;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  font-size: 1em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+.note {
+  font-size: 0.95em;
+  font-weight: 300;
+  margin-top: 1rem;
+  opacity: 0.7;
+  text-align: justify;
+}
+
+.note span {
+  font-weight: 600;
+  color: #e07525;
+}
+
+.subTitle {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.listItem {
+  list-style: decimal;
+  text-align: justify;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .description,
+  .note {
+    font-size: 0.9em;
+  }
+
+  .subTitle {
+    font-size: 1.3em;
+  }
+
+  .listItem {
+    font-size: 0.85em;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .TermAndConditionsHero {
+    padding: 2em 10%;
+    margin-top: 5rem;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .description,
+  .note {
+    font-size: 0.85em;
+  }
+
+  .subTitle {
+    font-size: 1.2em;
+  }
+
+  .list {
+    padding-left: 1rem;
+  }
+
+  .listItem {
+    font-size: 0.8em;
+  }
+}
+
+/* Very small screens (small phones) */
+@media (max-width: 480px) {
+  .TermAndConditionsHero {
+    padding: 1.5em 6%;
+  }
+
+  .title {
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+  }
+
+  .description,
+  .note {
+    font-size: 0.8em;
+  }
+
+  .subTitle {
+    font-size: 3.29vw;
+  }
+
+  .list {
+    padding-left: 0.5rem;
+  }
+
+  .listItem {
+    font-size: 0.75em;
+  }
+}

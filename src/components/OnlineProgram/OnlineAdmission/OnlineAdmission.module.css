@@ -1,0 +1,144 @@
+.onlineAdmission {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1vw 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8vw;
+  margin-top: 2rem;
+}
+
+.onlineIntroContent {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.onlineIntroContent img {
+  width: 25vw;
+  display: none;
+}
+
+.text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.text h2 {
+  color: #01b163;
+  font-size: 3.6vw;
+  line-height: 1.2;
+  margin-bottom: 2vw;
+}
+
+.text h2 span {
+  color: #ba5710;
+  font-size: 3.6vw;
+}
+
+.text p {
+  font-size: 2vw;
+}
+
+.text span {
+  font-size: 2vw;
+  padding: 0.5vw;
+  border-radius: 4px;
+}
+
+.centerBtn {
+  width: 100%;
+  background-color: #e07325;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(2, 61, 61);
+}
+
+.bbb {
+  width: 100%;
+  text-align: center;
+  color: #ba5710;
+  background-color: #edbe9d;
+}
+
+.formHide {
+  display: none;
+}
+
+.overlayDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlayForm {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cf {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .onlineAdmission {
+    min-height: 65vh;
+  }
+  .form {
+    display: none;
+  }
+  .onlineIntroContent img {
+    display: block;
+  }
+  .onlineIntroContent {
+    width: 100%;
+  }
+  .text {
+    width: 63%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .onlineAdmission {
+    margin-top: 30vw;
+  }
+  .onlineIntroContent {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .onlineIntroContent img {
+    width: 70%;
+  }
+  .text {
+    width: 100%;
+  }
+  .text h2 {
+    font-size: 6vw;
+    line-height: 1.4;
+    margin-bottom: 4vw;
+  }
+  .text p {
+    font-size: 3.3vw;
+    margin-bottom: 2vw;
+  }
+  .text span {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    padding: 1.5vw;
+    border-radius: 5px;
+  }
+}

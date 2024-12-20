@@ -1,0 +1,134 @@
+.opportunitySection {
+  width: 100%;
+  padding: 3vw 10%;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.title {
+  width: 65%;
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  /* text-align: justify; */
+}
+
+.title span {
+  font-size: 2.8vw;
+}
+
+.description {
+  width: 30%;
+  font-size: 1.3vw;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: justify;
+  opacity: 0.9;
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.excelImg {
+  height: 15vw;
+  border-radius: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cardDesc {
+  width: 80%;
+  font-size: 1vw;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardTitle {
+    font-size: 1.8vw;
+  }
+  .cardDesc {
+    font-size: 1.2vw;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 5vw;
+  }
+  .title span {
+    font-size: 2.8vw;
+  }
+  .description {
+    width: 35%;
+    font-size: 1.7vw;
+  }
+  .bottomSection {
+    gap: 1rem;
+  }
+  .cardTitle {
+    font-size: 2.2vw;
+  }
+  .cardDesc {
+    font-size: 1.5vw;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topSection {
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .title {
+    width: 100%;
+    font-size: 8vw;
+    text-align: center;
+  }
+  .title span {
+    font-size: 4.8vw;
+  }
+  .description {
+    width: 100%;
+    font-size: 3.3vw;
+  }
+  .bottomSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .card {
+    gap: 2vw;
+  }
+  .excelImg {
+    height: 45vw;
+  }
+  .cardTitle {
+    font-size: 6vw;
+  }
+  .cardDesc {
+    font-size: 3.3vw;
+  }
+}

@@ -1,0 +1,150 @@
+.eligibility {
+  width: 100%;
+  padding: 2vw 3vw;
+}
+
+.eligibility h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+  position: relative;
+}
+
+.eligibility h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #444;
+  margin-top: 0.8vw;
+}
+
+.titleDesc {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2vw;
+}
+
+.titleDesc .icon svg {
+  font-size: 1.5vw;
+}
+
+.titleDesc p {
+  font-size: 1.1vw;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 0.9vw;
+}
+
+.titleDesc span {
+  margin-left: 2.7vw;
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.eligibilityList {
+  padding-left: 4.3vw;
+  margin-bottom: 1vw;
+}
+
+.eligibilityItem {
+  font-size: 1.05vw;
+  font-weight: 300;
+  margin-bottom: 0.5vw;
+  position: relative;
+}
+
+.eligibilityItem a {
+  color: #e07525;
+}
+
+.eligibilityItem span {
+  font-size: 1.06vw;
+  font-weight: 500;
+}
+
+.eligibilityItem::before {
+  content: "";
+  display: inline-block;
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 50%;
+  background: #e07525;
+  margin-right: 1vw;
+  position: absolute;
+  top: 0.6vw;
+  left: -1.5vw;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .eligibility h2 {
+    font-size: 3.5vw !important;
+  }
+
+  .eligibilityItem span,
+  .eligibilityItem::before {
+    font-size: 3vw !important;
+    margin-bottom: 1vw;
+  }
+
+  .titleDesc .icon svg {
+    margin-bottom: 0.5vw !important;
+  }
+
+  .titleDesc p {
+    font-size: 1.5vw !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .eligibility {
+    padding: 2vw 3vw;
+  }
+
+  .eligibility h2 {
+    font-size: 4vw !important;
+    margin-bottom: 1.5vw !important;
+  }
+
+  .titleDesc p {
+    font-size: 3vw !important;
+    line-height: 1.25 !important;
+    margin-bottom: 1.1vw !important;
+    text-align: justify;
+  }
+
+  .eligibilityItem span {
+    font-size: 2.9vw !important;
+    margin-bottom: 1vw;
+  }
+
+  .eligibilityList .eligibilityItem {
+    font-size: 2.9vw !important;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 0.5vw;
+    margin-left: 3.8vw;
+  }
+
+  .eligibilityItem::before {
+    width: 1.3vw !important;
+    height: 1.3vw !important;
+    top: 1.6vw !important;
+    left: -3vw !important;
+  }
+
+  .titleDesc {
+    gap: 1.8vw;
+  }
+
+  .titleDesc span {
+    font-size: 2.8vw;
+    margin-left: 5vw;
+    margin-top: -10px;
+  }
+
+  .titleDesc .icon svg {
+    font-size: 3vw;
+    margin-bottom: 2.4vw !important;
+  }
+}

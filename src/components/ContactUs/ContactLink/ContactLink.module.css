@@ -1,0 +1,55 @@
+.ContactLink {
+  width: 100%;
+  padding: 3vw 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+}
+
+.contactBox {
+  min-height: 15vw;
+  padding: 2vw 2.2vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.8vw;
+  background: #00ffa61a;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactBox h3 {
+  font-size: 2vw;
+}
+
+.contactBox h3 span {
+  color: #e07325;
+}
+
+.contactBox p {
+  font-size: 1vw;
+  line-height: 1.3;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /* Combine all user-select styles */
+}
+
+.contactBox a {
+  font-size: 1vw;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5vw;
+}
+
+.contactBox a:is(:hover, :focus, :active) {
+  color: aqua;
+  transform: scale(0.9);
+}
+
+.contactBox:is(:hover, :focus, :active) {
+  transform: scale(1.05);
+}

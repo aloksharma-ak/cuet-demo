@@ -1,0 +1,29 @@
+.mobileBottomMenuBtnPage {
+    position: fixed; /* Fixed position to cover the screen */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Cover the full height */
+    background-color: #082319;
+    overflow-y: auto; /* Allow vertical scrolling */
+    z-index: 999; /* Above the footer */
+  }
+  
+  .mobileBottomMenuBtnPageCloseBtn {
+    background: none; /* Remove default button styling */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor for button */
+    position: absolute; /* Position close button at the top right */
+    top: 4rem; /* Space from the top */
+    right: 1rem; /* Space from the right */
+    font-size: 24px; /* Font size for the close icon */
+    color: #fff; /* Close icon color */
+  }
+  
+  .mobileBottomMenuBtnPageContent {
+    margin-top: 2rem; /* Space from the close button */
+    display: flex; /* Flex for potential future layout needs */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+  }
+  

@@ -1,0 +1,192 @@
+.homeBlog {
+  width: 100%;
+  min-height: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3vw 10%;
+}
+
+.homeBlogTitle {
+  width: 100%;
+  max-width: 72vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.BlogTitle {
+  font-size: 3.3vw;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.blogExplore {
+  display: flex;
+  padding: 0.2rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.blogExploreIcon svg {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  margin-left: 0.8rem;
+}
+
+.blogExplore:is(:hover, :focus, :active) {
+  color: #e07525;
+  transform: scale(1.05);
+}
+
+.homeBlogContent {
+  width: 100%;
+  max-width: 72vw;
+  position: relative;
+}
+
+.homeBlogCard {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: #136a4f5f;
+}
+
+.homeBlogCardImg {
+  height: 12vw;
+  width: 100%;
+  object-fit: cover;
+}
+
+.homeBlogCardText {
+  padding: 1.3rem 1rem;
+}
+
+.homeBlogCardTitle {
+  font-size: 1.1rem;
+}
+
+.homeBlogCardDesc {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Swiper-specific CSS */
+
+.swiperNavigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.customPrev,
+.customNext {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff; /* You can customize the color */
+  transition: color 0.3s ease-in-out;
+}
+
+.customPrev:is(:hover, :focus, :active),
+.customNext:is(:hover, :focus, :active) {
+  color: #e07525; /* Hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .BlogTitle {
+    font-size: 2.4rem;
+  }
+
+  .homeBlogCardImg {
+    height: 15vw; /* Adjust image height */
+  }
+
+  .homeBlogCardTitle {
+    font-size: 1.2rem;
+  }
+
+  .homeBlogCardDesc {
+    font-size: 0.9rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-size: 1.3rem; /* Smaller button size */
+  }
+}
+
+@media (max-width: 768px) {
+  .BlogTitle {
+    font-size: 2rem;
+  }
+
+  .homeBlogCardImg {
+    height: 18vw; /* Adjust image height */
+  }
+
+  .homeBlogCardTitle {
+    font-size: 1.1rem;
+  }
+
+  .homeBlogCardDesc {
+    font-size: 0.85rem;
+  }
+
+  .customPrev,
+  .customNext {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeBlog {
+    gap: 2rem;
+  }
+  
+  .BlogTitle {
+    font-size: 8vw;
+    letter-spacing: normal;
+  }
+
+  .blogExplore {
+    font-size: 2vw;
+  }
+  
+  .blogExploreIcon svg {
+    font-size: 1.8vw;
+    margin-top: 0.4vw;
+    margin-left: 1vw;
+  }
+
+  .homeBlogCardImg {
+    height: 25vw; /* Adjust image height */
+  }
+
+  .homeBlogCardTitle {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .homeBlogCardDesc {
+    font-size: 3vw;
+    padding-bottom: 3vw;
+    text-align: center;
+  }
+
+  .customPrev,
+  .customNext {
+    font-size: 1rem;
+  }
+}

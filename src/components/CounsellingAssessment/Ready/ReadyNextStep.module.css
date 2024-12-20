@@ -1,0 +1,91 @@
+.nextStep {
+  padding: 3vw 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left {
+  width: 58%;
+}
+
+.left .title {
+  font-size: 2.8vw;
+  margin-bottom: 1.5rem;
+}
+
+.left .title span {
+  color: #e07525;
+}
+
+.left .description {
+  font-size: 1vw;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+.button {
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.2vw;
+  color: #fff;
+  background-color: rgba(0, 255, 255, 0.123);
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.button:hover {
+    background-color: #e07525;
+    color: rgb(4, 31, 31);
+    transform: scale(0.95);
+}
+
+.right {
+    width: 30%;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media screen and (max-width: 768px) {
+  .left .title {
+    font-size: 3.1vw;
+  }
+  .button {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left {
+    width: 100%;
+  }
+  .left .title {
+    font-size: 5.4vw;
+    text-align: center;
+  }
+  .left .description {
+    font-size: 3.2vw;
+    text-align: justify;
+  }
+  .button {
+    font-size: 4vw;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .right {
+    display: none;
+  }
+}

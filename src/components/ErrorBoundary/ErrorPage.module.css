@@ -1,0 +1,70 @@
+.errorPage {
+  text-align: center;
+  padding: 3rem;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.errorPage h1 {
+  font-size: 2.5rem;
+  color: #ff5c5c;
+  margin-bottom: 1rem;
+}
+
+.errorPage p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.errorActions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.errorActions button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.homeButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.homeButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.backButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.backButton:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+.contactLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}

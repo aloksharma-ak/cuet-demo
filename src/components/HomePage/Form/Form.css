@@ -1,0 +1,148 @@
+.form-container {
+  width: 100%;
+  /* min-height: 150vh; */
+  padding: 0 12% 3vw;
+  background-color: #fff;
+}
+
+.form-container .top-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-container .profile-image {
+  width: 30vw;
+  height: auto;
+}
+
+.form-container .top-right-section {
+  width: 53%;
+}
+
+.form-container .top-right-section h2 {
+  font-size: 1.6vw;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-bottom: 2vw;
+}
+
+.form-container .counselling-form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-self: start;
+  margin-right: 2vw;
+}
+
+.form-container .counselling-form input {
+  width: 80%;
+  padding: 1.2vw;
+  margin-bottom: 0.5vw;
+  background: #000;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 1.3vw;
+  border-bottom-right-radius: 1.3vw;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.form-container .counselling-form .form-select {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-container .counselling-form .form-select select {
+  width: 49%;
+  padding: 1.2vw;
+  margin-bottom: 0.5vw;
+  background: #000;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 1.3vw;
+  border-bottom-right-radius: 1.3vw;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.form-container .submit-button {
+  width: 49%;
+  padding: 1.2vw;
+  margin-bottom: 0.5vw;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 1vw;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.form-container .submit-button:is(:hover, :focus, :active) {
+  background-color: #dfdfdf;
+}
+.form-container .bottom-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #000;
+  margin-top: 3vw;
+}
+
+.form-container .bottom-section .image {
+  width: 48%;
+  height: 60vh;
+  background-color: rgba(255, 0, 0, 0.301);
+}
+
+.form-container .description {
+  width: 48%;
+}
+
+.form-container .description h2 {
+  width: 90%;
+  font-size: 2.95vw;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-bottom: 2vw;
+}
+
+.form-container .description p {
+  font-size: 1.3vw;
+  line-height: 1.3;
+  margin-bottom: 2vw;
+}
+
+.form-container .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+.form-container .description h3 {
+  margin-bottom: 1vw;
+}
+
+.form-container .logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.form-container .team-button {
+  background-color: #ffd302;
+  color: #000;
+  border: none;
+  padding: 1.2vw 1.5vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-container .team-button:is(:hover, :focus, :active) {
+  background-color: #e4be03;
+}

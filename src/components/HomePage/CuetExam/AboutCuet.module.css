@@ -1,0 +1,71 @@
+/* AboutCuet.module.css */
+.aboutCuet {
+    width: 100%;
+    padding: 2vw 3vw;
+  }
+  
+  .aboutCuet h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 1.2vw;
+    position: relative;
+  }
+  
+  .aboutCuet h2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #444;
+    margin-top: 0.8vw;
+  }
+  
+  .titleDesc {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2vw;
+  }
+  
+  .icon svg {
+    font-size: 1.5vw;
+  }
+  
+  .titleDesc p {
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 0.9vw;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .aboutCuet h2 {
+      font-size: 3.5vw;
+    }
+  
+    .titleDesc .icon svg {
+      font-size: 2vw;
+    }
+  
+    .titleDesc p {
+      font-size: 1.5vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutCuet h2 {
+      font-size: 4vw;
+    }
+  
+    .titleDesc .icon svg {
+      font-size: 3vw;
+      margin-bottom: 2.5vw;
+    }
+  
+    .titleDesc p {
+      font-size: 2.8vw;
+      line-height: 1.25;
+      margin-bottom: 1.1vw;
+      text-align: justify;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+.statisticsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 8px;
+}
+
+.statItem {
+  /* text-align: center; */
+  color: #333;
+}
+
+.statItem h2 {
+  font-size: 2.5vw;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: #fff;
+}
+
+.statItem p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #888;
+}
+
+@media screen and (max-width: 1024px) {
+  .statItem p {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statItem h2 {
+    font-size: 4vw;
+  }
+  .statItem p {
+    font-size: 1.75vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statItem {
+    text-align: center;
+  }
+  .statItem h2 {
+    font-size: 6vw;
+  }
+  .statItem p {
+    font-size: 2.6vw;
+    white-space: nowrap;
+  }
+}

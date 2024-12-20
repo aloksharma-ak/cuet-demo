@@ -1,0 +1,286 @@
+.CuetUniversityContainerMain {
+  padding: 5vw 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuetUniversityContainer {
+  width: 75%;
+  /* background-color: #ffffff; */
+  color: #000;
+  padding: 2vw 3%;
+  border-radius: 8px;
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.cuetUniversityHeading .headingText {
+  color: #fff;
+  letter-spacing: -0.4px;
+  font-size: 3vw; /* Slightly smaller font size */
+  text-align: center;
+  margin-bottom: 1vw; /* Reduced margin for better alignment */
+}
+
+.cuetUniversityBtn {
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  margin-bottom: 2vw;
+  padding: 0;
+}
+
+.cuetUniversityBtn button {
+  padding: 1vw 1.2vw; /* Increased padding for better clickability */
+  border: none;
+  background-color: #2b2b2b; /* Slightly lighter for better hover contrast */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added hover animation */
+}
+
+.cuetUniversityBtn buttonActive {
+  background-color: #353535; /* Slightly brighter active state */
+}
+
+.cuetUniversityBtn button:is(:hover, :focus, :active) {
+  background-color: #555; /* Brighter hover effect */
+  transform: scale(1.05); /* Zoom on hover */
+}
+
+.cuetUniversityBtn button svg {
+  font-size: 1.4vw;
+  color: #fff;
+}
+
+.cuetUniversityImage {
+  width: 100%;
+  margin: 3vw auto 0;
+  overflow: hidden;
+  position: relative; /* Positioned for buttons to be on the sides */
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: transparent;
+  color: #e07525;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navBtn:is(:hover, :focus, :active) {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prevBtn {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.nextBtn {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.imageSlider {
+  cursor: grab;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+.imageContainer {
+  /* width: 10vw; */
+ height: 190px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 1vw;
+ border: 1px solid #555;
+ border-radius: 2rem;
+ background-color: #fff;
+ overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  margin-top: -25px;
+}
+
+/* .imageContainer:is(:hover, :focus, :active) img {
+  transform: scale(1.1);
+} */
+
+.imageContainer:is(:hover, :focus, :active) .imageOverlay {
+  display: flex;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay */
+  display: none;
+  transition: all 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imageContainer h2 {
+  font-size: 0.8vw;
+  color: #000;
+  line-height: 1;
+}
+
+.cuetUniversityImage p {
+  font-size: 1vw;
+  padding: 0.4vw 2.5vw;
+  background: rgb(5, 160, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 223, 161, 0.5) 40%,
+    rgba(37, 182, 205, 0.244) 90%
+  );
+  border-radius: 40px; /* Tighter curve */
+  /* position: absolute;
+  left: 0.6rem;
+  bottom: 0.5rem; */
+  margin-top: 1vw;
+  display: grid !important;
+  place-self: center;
+}
+
+.imageOverlay span {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.2rem;
+  font-size: 4.5vw;
+  line-height: 1;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.4); /* Slightly more transparent */
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .cuetUniversityContainer {
+    padding: 4vw 3%;
+    border-radius: 6rem;
+  }
+
+  .cuetUniversityHeading .headingText {
+    font-size: 3.3vw;
+    margin-bottom: 0;
+  }
+
+  .cuetUniversityBtn button svg {
+    font-size: 1.3vw;
+  }
+
+  .imageContainer {
+    height: 180px;
+  } 
+
+  .imageContainer h2 {
+    font-size: 1.4vw;
+    top: 50%;
+  }
+
+  .cuetUniversityImage p {
+    font-size: 1.1vw;
+  }
+
+  .imageOverlay span {
+    font-size: 5.8vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cuetUniversityContainer {
+    padding: 4vw;
+  }
+
+  .cuetUniversityHeading .headingText {
+    font-size: 2.8vw;
+  }
+
+  .imageContainer {
+    height: 160px;
+  }
+
+  .imageContainer h2 {
+    font-size: 1.5vw;
+  }
+
+  .cuetUniversityImage p {
+    font-size: 1.7vw;
+    bottom: 1.5vw;
+  }
+
+  .imageOverlay span {
+    font-size: 7.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .cuetUniversityContainer {
+    padding: 8vw 3%;
+    border-radius: 1rem;
+    width: 95%;
+  }
+
+  .cuetUniversityHeading .headingText {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  .cuetUniversityBtn {
+    margin-bottom: 6vw;
+  }
+
+
+  .cuetUniversityBtn button svg {
+    font-size: 2.4vw;
+  }
+
+  .imageContainer {
+    height: 130px;
+    padding: 4vw;
+  }
+
+  .imageOverlay {
+    padding: 0 4vw 2vw;
+  }
+
+  .imageContainer h2 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cuetUniversityHeading .headingText {
+    margin-bottom: 1.5rem;
+  }
+  .imageContainer {
+    height: 145px;
+  }
+}

@@ -1,0 +1,176 @@
+.scholarshipSteps  {
+  color: #ffffff;
+  text-align: center;
+  padding: 3vw 10%;
+}
+
+.title {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* .stepsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stepCard {
+  background-color: #172f42;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-5px);
+}
+
+.stepNumber {
+  font-size: 4vw;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.stepTitle {
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stepDescription {
+  font-size: 0.9vw;
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  padding: 12px 25px;
+  background-color: #2C7B7C;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(0.95);
+} */
+
+.instructionsContainer {
+  color: #000;
+  background-color: #fddc99; /* Light orange background */
+  border: 2px solid #184d47; /* Green border */
+  padding: 20px 0 0;
+  border-radius: 8px;
+  max-width: 850px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  /* list-style: decimal; */
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+  text-align: justify;
+}
+
+.list li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #082319; /* Green bullet */
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.note {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: 20px 10px;
+  color: rgb(255, 0, 0);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.4vw;
+    }
+    .stepCard {
+        width: 230px;
+    }
+    .stepTitle {
+        font-size: 1.5vw;
+    }
+    .stepDescription {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3vw;
+        width: 80%;
+        margin: 0 auto 2rem;
+    }
+    .stepCard {
+        width: 100%;
+    }
+    .stepNumber {
+        font-size: 7vw;
+    }
+    .stepTitle {
+        font-size: 2.5vw;
+    }
+    .stepDescription {
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .scholarshipSteps {
+        padding: 2rem 10px;
+    }
+    .title {
+        font-size: 5vw;
+        width: 100%;
+    }
+    .stepNumber {
+        font-size: 8vw;
+    }
+    .stepTitle {
+        font-size: 4vw;
+    }
+    .stepDescription {
+        font-size: 3vw;
+    }
+    .list li, .note {
+      font-size: 0.8rem;
+    }
+}

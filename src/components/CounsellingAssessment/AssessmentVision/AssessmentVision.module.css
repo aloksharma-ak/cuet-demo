@@ -1,0 +1,171 @@
+.assessmentVision {
+  width: 100%;
+  padding: 3vw 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.floatingImg {
+  width: 48%;
+}
+
+.floatingImg img {
+  width: 100%;
+  animation: floatingImgAnimation 5s ease-in-out infinite;
+}
+
+.visionText {
+  width: 50%;
+}
+
+.visionText .heading {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.visionText .heading span {
+  color: #e07525;
+}
+
+.visionText .description {
+  font-size: 1vw;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.visionText .subHeading {
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin-top: 0.8rem;
+}
+
+.list {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.list .listItem {
+  font-size: 1vw;
+  font-weight: 300;
+  list-style: unset;
+  text-align: justify;
+}
+
+.list .listItem span {
+  font-weight: 500;
+}
+
+.proceedToPay .contentDiv {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 255, 255, 0.123);
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.proceedToPay .contentDiv:hover {
+  background-color: #e07525;
+  color: rgb(4, 31, 31);
+  transform: scale(0.95);
+}
+
+.proceedToPay .contentDiv h2 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+@keyframes floatingImgAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .visionText {
+    font-size: 1.5vw;
+    margin-bottom: 2rem;
+  }
+
+  .proceedToPay .contentDiv h2 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .visionText .heading {
+    font-size: 2.49vw;
+  }
+  .visionText .description {
+    font-size: 1.2vw;
+  }
+  .visionText .subHeading {
+    font-size: 1.8vw;
+  }
+  .list .listItem {
+    font-size: 1.2vw;
+  }
+  .proceedToPay .contentDiv {
+    padding: 1.5vw;
+    margin-top: 4vw;
+  }
+
+  .proceedToPay .contentDiv h2 {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .assessmentVision {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .floatingImg {
+    width: 100%;
+  }
+
+  .visionText {
+    width: 100%;
+  }
+
+  .visionText .heading {
+    font-size: 4.9vw;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .visionText .description {
+    font-size: 3vw;
+    /* text-align: center; */
+  }
+  .visionText .subHeading {
+    font-size: 4.3vw;
+    /* text-align: center; */
+    margin-top: 1rem;
+  }
+  .list .listItem {
+    font-size: 2.8vw;
+    /* text-align: center; */
+  }
+  .proceedToPay .contentDiv {
+    padding: 2.5vw;
+  }
+  .proceedToPay .contentDiv h2 {
+    font-size: 3vw;
+  }
+  .careerImg {
+    display: none;
+  }
+}

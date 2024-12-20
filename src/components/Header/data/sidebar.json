@@ -1,0 +1,231 @@
+[
+    {
+        "title": "Courses",
+        "icon": "",
+        "childrens": [
+            {
+                "title": "11th Class",
+                "childrens": [
+                    {
+                        "title": "Commerce",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "Humanities",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "Science",
+                        "icon": "",
+                        "path": "/our-courses"
+                    }
+                ]
+            },
+            {
+                "title": "12th Board",
+                "childrens": [
+                    {
+                        "title": "Commerce",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "Humanities",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "Science",
+                        "icon": "",
+                        "path": "/our-courses"
+                    }
+                ]
+            },
+            {
+                "title": "CUET Course",
+                "childrens": [
+                    {
+                        "title": "CUET Full Course",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "General Test + English",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "General Test",
+                        "icon": "",
+                        "path": "/our-courses"
+                    },
+                    {
+                        "title": "Languages Preparation",
+                        "icon": "",
+                        "path": "/our-courses"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Result",
+        "icon": "",
+        "path": ""
+    },
+    {
+        "title": "Resources",
+        "icon": "",
+        "childrens": [
+            {
+                "title": "Revision Notes",
+                "path": ""
+            },
+            {
+                "title": "CUET Past Papers",
+                "path": ""
+            },
+            {
+                "title": "Sample Papers",
+                "path": ""
+            },
+            {
+                "title": "Answer Key & Solutions",
+                "path": ""
+            }
+        ]
+    },
+    {
+        "title": "Know Us",
+        "icon": "",
+        "childrens": [
+            {
+                "title": "Company Overview",
+                "icon": "",
+                "path": "/about-company"
+            },
+            {
+                "title": "Founders & Leadership",
+                "icon": "",
+                "path": "/about-company#founders-and-leadership"
+            },
+            {
+                "title": "Mission, Vision & Values",
+                "icon": "",
+                "path": "/about-company#mission-vision"
+            },
+            {
+                "title": "Media Coverage",
+                "icon": "",
+                "path": "/about-company"
+            }
+        ]
+    },
+    {
+        "title": "Contact Us",
+        "icon": "",
+        "path": "/contact-us"
+    },
+    {
+        "title": "Center",
+        "icon": "",
+        "childrens": [
+            {
+                "title": "Delhi NCR",
+                "icon": "",
+                "childrens": [
+                    {
+                        "title": "Gurugram",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Noida",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Faridabad",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Gajiyabad",
+                        "icon": ""
+                    }
+                ]
+            },
+            {
+                "title": "Bihar",
+                "icon": "",
+                "childrens": [
+                    {
+                        "title": "Patna",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Gaya",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Darbhanga",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Bhagalpur",
+                        "icon": ""
+                    }
+                ]
+            },
+            {
+                "title": "Jharkhand",
+                "icon": "",
+                "childrens": [
+                    {
+                        "title": "Ranchi",
+                        "icon": ""
+                    },
+                    {
+                        "title": "Jameshdpur",
+                        "icon": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Partner With Us",
+        "icon": "",
+        "path": "/become-a-partner"
+    },
+    {
+        "title": "Blog",
+        "icon": "",
+        "childrens": [
+            {
+                "title": "Latest News",
+                "icon": "",
+                "path": "/blogs/#LatestBlogs"
+            },
+            {
+                "title": "Notification",
+                "icon": "",
+                "path": "/blogs/#Notifications"
+            },
+            {
+                "title": "Information Bulletin",
+                "icon": "",
+                "path": "/blogs/#InformationBulletin"
+            },
+            {
+                "title": "SalahPlus",
+                "icon": "",
+                "path": "/blogs/#SalahPlus"
+            },
+            {
+                "title": "Study Abroad",
+                "icon": "",
+                "path": "/blogs"
+            }
+        ]
+    }
+]

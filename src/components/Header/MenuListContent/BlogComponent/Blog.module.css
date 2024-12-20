@@ -1,0 +1,44 @@
+.Blog {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.image {
+    width: 30%;
+    height: 3.8vw;
+}
+
+.image img {
+    height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  filter: brightness(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.Content {
+    width: 70%;
+}
+
+.Title {
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.Description {
+    font-size: 0.7vw;
+    font-weight: 350;
+    color: #dadada;
+    line-height: 1.1;
+    margin-top: 0.5rem;
+}
+
+.Blog:hover.image img {
+    filter: brightness(1);
+}

@@ -1,0 +1,32 @@
+.programAdvantage {
+    width: 100%;
+    padding: 3vw 10% 0;
+  }
+  
+  .programAdvantageDiv {
+    position: relative;
+    padding: 2.5vw 0;
+    border-top: 5px solid rgb(26, 94, 94);
+  }
+  
+  .programAdvantageDiv span {
+    position: absolute;
+    top: -1.95vw;
+    left: 2vw;
+    color: rgb(26, 94, 94);
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #082319;
+    padding: 0 0.8vw;
+  }
+  
+  .programAdvantageDiv p {
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0.6;
+    text-align: justify;
+    margin-bottom: 1vw;
+  }
+  

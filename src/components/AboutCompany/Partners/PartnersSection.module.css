@@ -1,0 +1,139 @@
+.PartnersSection {
+  width: 100%;
+  padding: 3vw 10%;
+}
+
+.title {
+  font-size: 3vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+.desc {
+  font-size: 1vw;
+  font-weight: 300;
+  text-align: center;
+  margin: 2vw 0;
+}
+
+.partnersContainer {
+  width: 100%;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5vw;
+}
+
+.centerPartner,
+.collegePartner {
+  width: 50%;
+  height: 100%;
+  background: #000;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.divider {
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+.partnerTitle {
+  font-size: 1.8vw;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.partnerBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+
+.partnerLogo {
+  height: 11.6vw;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.plus {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.plus:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .partnerLogo {
+    height: 11vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 5vw;
+  }
+  .desc {
+    font-size: 1.75vw;
+  }
+  .partnersContainer {
+    height: 32vw;
+  }
+  .partnerTitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 6vw;
+  }
+  .desc {
+    font-size: 3vw;
+    text-align: justify;
+  }
+  .partnersContainer {
+    flex-direction: column;
+    height: max-content;
+    gap: 4vw;
+  }
+  .divider {
+    display: none;
+  }
+  .centerPartner,
+  .collegePartner {
+    width: 100%;
+  }
+  .partnerTitle {
+    font-size: 4.5vw;
+  }
+  .partnerBox {
+    gap: 2vw;
+  }
+  .partnerLogo {
+    height: 26vw;
+  }
+}

@@ -1,0 +1,71 @@
+.contactIntro {
+    width: 100%;
+    padding: 3vw 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5vw;
+}
+
+.left h2 {
+    font-size: 2vw;
+}
+
+.left p {
+    font-size: 1vw;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.4vw;
+}
+
+.points span {
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8vw;
+}
+
+.points span svg {
+    font-size: 1.3vw;
+    color: #E07325;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #e0732561;
+}
+
+.left a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5vw;
+    font-size: 1vw;
+    padding: 0.8vw 1.5vw;
+    border-radius: 0.5vw;
+    border: 1px solid aqua;
+    transition: all 0.3s ease;
+}
+
+.left a:is(:hover, :focus, :active) {
+    background-color: #a1490b;
+    color: #04ffea;
+    transform: scale(0.9);
+}
+
+img {
+    width: 90%;
+}

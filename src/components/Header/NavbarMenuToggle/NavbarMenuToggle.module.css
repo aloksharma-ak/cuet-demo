@@ -1,0 +1,66 @@
+.navbarToggle {
+    display: none;
+    overflow: hidden;
+  }
+  
+  .navbarToggler {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+  
+  /* Navbar toggler icon size */
+  .navbarTogglerIcon {
+    font-size: 1.8rem;
+  }
+  
+  /* Overlay for the menu */
+  .navbarMenuListOverlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 9998;
+    opacity: 0; /* Initially transparent */
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0s linear 0.4s, left 1s ease-in-out;
+  }
+  
+  /* Active state for the overlay */
+  .active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Make it visible */
+    transition: opacity 0.4s ease-in-out; /* Smooth fade-in */
+    left: 0; /* Move to the left */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbarToggle {
+      display: block;
+    }
+  
+    .navbarToggler {
+      padding: 0.5rem 0;
+      margin-top: 1vw;
+      margin-right: 1vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbarToggler {
+      padding: 0.5rem 0;
+      margin-top: 2vw;
+    }
+  
+    .navbarTogglerIcon {
+      font-size: 1.7rem;
+    }
+  }
+  

@@ -1,0 +1,112 @@
+.callToAction {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a8b74; /* Green background */
+    padding-left: 10%;
+    margin: 3vw auto;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leftSection {
+    width: 65%;
+  }
+  
+  .testDate {
+    font-size: 2.3vw;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .details {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    display: flex;align-items: center;
+  }
+  
+  .icon {
+    font-size: 16px;
+  }
+  
+  .rightSection {
+    width: 35%;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
+  }
+  
+  .registerButton {
+    width: 100%;
+    background-color: #ff7f32; /* Orange background */
+    color: #fff;
+    border: none;
+    padding: 3rem 10vw 3rem 15%;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 3px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    transition: all 0.3s ease-in;
+  }
+  
+  .registerButton:hover {
+    background-color: #e66c28;
+    transform: scale(1.1);
+  }
+
+  .registerButton:active {
+    color: #000;
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+    .testDate {
+        font-size: 2.7vw;
+    }
+    .registerButton {
+        font-size: 1.6vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .registerButton {
+        font-size: 2vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .callToAction {
+      padding-left: 5%;
+      margin: 2rem auto;
+    }
+    .leftSection {
+        width: 63%;
+    }
+    .testDate {
+        font-size: 5vw;
+        line-height: 1.2;
+    }
+    .rightSection {
+        width: 37%;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .registerButton {
+        font-size: 3.8vw;
+        padding-left: 7vw;
+        padding-right: 3vw;
+        padding-top: 1.9rem;
+        padding-bottom: 1.9rem;
+        text-align: center;
+    }
+    .details {
+        font-size: 2.4vw;
+        margin-top: 1px;
+    }
+    .icon {
+      font-size: 10px;
+    }
+  }

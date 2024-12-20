@@ -1,0 +1,297 @@
+.scholarshipPrize {
+  width: 100%;
+  padding: 3vw 10%;
+}
+
+.prizeText .heading {
+  font-size: 1.42vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+}
+
+.prizeText .heading span {
+  color: #e07325;
+}
+
+.prizeText {
+  position: relative;
+}
+
+.prizeContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.prizeItem {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.9vw;
+}
+
+.item {
+  width: 100%;
+  padding: 2vw 1.3vw;
+  background-color: #113b2a;
+  border-radius: 0.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5vw;
+}
+
+.item img {
+  width: 3.5vw;
+}
+
+.item h3 {
+  font-size: 1.2vw;
+}
+
+.size {
+  width: calc(100% / 2 - 0.5vw);
+}
+
+.prizeItem a, .list {
+  width: 100%;
+  background-color: #227458;
+  border-radius: 0.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2vw;
+  padding: 1.6vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.list {
+  display: block;
+}
+
+.listTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.listItem {
+  list-style: disc;
+  margin-left: 1rem;
+  font-size: 1vw;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.prizeItem a img {
+  width: 5vw;
+}
+
+.aText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5vw;
+}
+
+.aText h4 {
+  font-size: 1.3vw;
+}
+
+.aText p {
+  font-size: 1vw;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.aText p span {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.aText p span:is(:hover, :focus, :active) {
+  color: #e07325;
+}
+
+.prizeItem a:is(:hover, :focus, :active) {
+  transform: scale(1.05);
+}
+
+
+
+.highlights {
+  position: sticky;
+  top: 4.5vw;
+  right: 0;
+  background-color: #113b2a;
+  border-radius: 0.8vw;
+  padding: 2vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+
+.highlights h3 {
+  font-size: 2vw;
+  color: #e07325;
+  margin-bottom: 1vw;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+
+.highlightItem img {
+  width: 2vw;
+}
+
+.highlightItem p {
+  font-size: 1vw;
+}
+
+.highlights a {
+  width: 100%;
+  margin-top: 1.5vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+  padding: 1.1vw;
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  background: #124d51;
+  transition: all 0.3s ease-in-out;
+}
+
+.highlights a:is(:hover, :focus, :active) {
+  background-color: #bc5b16;
+  transform: scale(0.9);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .listItem {
+    font-size: 1.1vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prizeText .heading {
+    font-size: 3.3vw !important;
+  }
+
+  .listItem {
+    font-size: 1.3vw;
+  }
+
+  .prizeContainer {
+    gap: 1vw;
+  }
+
+  .prizeItem h4 {
+    font-size: 3vw !important;
+  }
+
+  .prizeItem p {
+    font-size: 2vw !important;
+  }
+
+  .highlights {
+    top: 8.5vw;
+  }
+
+  .highlights h3 {
+    font-size: 3vw;
+  }
+
+  .highlightItem p {
+    font-size: 1.5vw;
+  }
+
+  .highlights a {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prizeText .heading {
+    font-size: 4.5vw !important;
+    font-weight: 500;
+    margin: 6vw 0;
+  }
+
+  .prizeContainer {
+    flex-direction: column;
+    gap: 5vw !important;
+  }
+
+  .prizeItem {
+    width: 100% !important;
+    gap: 1.5vw !important;
+  }
+
+  .item, .list {
+    gap: 3vw !important;
+    padding: 4vw;
+  }
+
+  .listItem {
+    font-size: 2.7vw;
+  }
+
+  .size {
+    width: calc(100% / 2 - 1vw);
+  }
+
+  .item img {
+    width: 6vw !important;
+  }
+
+  .item h3 {
+    font-size: 3.3vw !important;
+    line-height: 1.15;
+  }
+
+  .prizeItem a {
+    gap: 1vw !important;
+  }
+
+  .prizeItem a img {
+    width: 8vw !important;
+  }
+
+  .aText {
+    gap: 1vw !important;
+  }
+
+  .highlights {
+    position: static !important;
+    margin: 0 auto !important;
+    padding: 5vw 15vw !important;
+    border-radius: 8px !important;
+  }
+
+  .highlights h3 {
+    font-size: 5vw !important;
+  }
+
+  .highlightItem img {
+    width: 4vw !important;
+  }
+
+  .highlightItem p {
+    font-size: 2.5vw !important;
+  }
+
+  .highlights a {
+    font-size: 3vw;
+  }
+}

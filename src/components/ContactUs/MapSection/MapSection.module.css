@@ -1,0 +1,87 @@
+.MapSection {
+    width: 100%;
+    min-height: 50vh;
+    padding: 3vw 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.MapSection h2 {
+    font-size: 2.2vw;
+}
+
+.MapSection h2 span {
+    color: #E07325;
+}
+
+.addressMap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+}
+
+.addressText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.1vw;
+}
+
+.addressText h3 {
+    font-size: 1.3vw;
+}
+
+.addressText p {
+    font-size: 1.1vw;
+}
+
+.addressText a {
+    font-size: 1.1vw;
+}
+
+.addressText a span {
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.9vw;
+}
+
+.socialMedia h4 {
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.socialMedia h4 span {
+    color: #E07325;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.socialLinks a {
+    padding: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.socialLinks a:is(:hover, :focus, :active) {
+    border-color: aqua;
+    color: #E07325;
+    transform: scale(1.15);
+}
