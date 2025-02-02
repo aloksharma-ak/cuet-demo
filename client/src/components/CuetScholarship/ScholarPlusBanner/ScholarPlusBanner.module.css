@@ -1,0 +1,85 @@
+.ctaSection {
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 4vw 10%;
+  }
+  
+  .title {
+    font-size: 2.6vw;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  
+  .description {
+    width: 80%;
+    font-size: 1.2vw;
+    font-weight: 300;
+    opacity: 0.8;
+    line-height: 1.5;
+    margin: 0 auto 30px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    padding: 12px 30px;
+    font-size: 1vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #124d51;
+    color: #ffffff; 
+  }
+  
+  .primaryButton:hover, .secondaryButton:hover {
+    transform: scale(0.95);
+    background-color: #e07525;
+  }
+
+  .tagLine {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
+        font-size: 3.3vw;
+    }
+    .description {
+        font-size: 1.75vw;
+        width: 95%;
+    }
+    .primaryButton,
+    .secondaryButton {
+        font-size: 2vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ctaSection {
+        padding: 2rem 10%;
+    }
+    .title {
+        font-size: 6vw;
+    }
+    .description {
+        font-size: 2.9vw;
+        width: 100%;
+    }
+    .buttonContainer {
+      flex-direction: column;
+    }
+    .primaryButton,
+    .secondaryButton {
+      width: 100%;
+        font-size: 3.8vw;
+    }
+  }

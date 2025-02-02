@@ -1,0 +1,9 @@
+.faqs {
+    padding: 0 10%;
+  }
+  
+  @media (max-width: 480px) {
+    .faqs {
+      padding: 0 5%;
+    }
+  }

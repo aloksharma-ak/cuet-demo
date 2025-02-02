@@ -1,0 +1,162 @@
+/* FacultySection.module.css */
+.facultySection {
+  width: 100%;
+  /* padding: 4vw 12% 8vw; */
+  /* background: #000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.facultyBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.facultyCard {
+  flex: 1 1 140px;  
+  width: calc(100% / 3 - 1vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  background-color: #092225;
+  border: 1px solid #888888;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  padding: 1.3rem 1.8rem;
+}
+
+.facultyCard:hover {
+  border-color: #07ff74;
+}
+
+.facultyCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid #888;
+  margin-bottom: 1vw;
+  margin-top: 1.5vw;
+}
+
+.facultyCard h3 {
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.facultyCard span {
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.facultyCard p {
+  font-size: 0.9vw;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.heading {
+  font-size: 3.3vw;
+  margin-bottom: 3vw;
+}
+
+/* Initially, the second card will be larger */
+.facultyCard:nth-child(2) {
+  transform: scale(1);
+}
+
+/* Hover effect to scale up one card and scale down the others */
+.facultyCard:is(:hover, :focus, :active) {
+  transform: scale(1);
+}
+
+.facultyCard:not(:is(:hover, :focus, :active)) {
+  transform: scale(0.95);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .facultySection {
+    padding: 5vw 0% 10vw;
+  }
+
+  .heading {
+    font-size: 3.3vw;
+  }
+
+  .facultyCard {
+    padding: 1rem;
+  }
+
+  .facultyBox {
+    width: 100%;
+  }
+  .facultyCard {
+    width: 100%;
+  }
+  .facultyCard p {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .facultyBox {
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .facultySection {
+    padding: 10vw 3% 15vw;
+  }
+
+  .facultyBox {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .facultyCard p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+
+  .facultyCard h3 {
+    font-size: 5.5vw;
+    font-weight: 500;
+  }
+
+  .facultyCard span {
+    font-size: 3.5vw;
+    margin-top: 0.1vw;
+    margin-bottom: 1.8vw;
+  }
+
+  .facultyCard img {
+    margin-bottom: 1vw;
+  }
+}

@@ -1,0 +1,85 @@
+.ctaSection {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.6vw;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.description {
+  width: 80%;
+  font-size: 1.2vw;
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin: 0 auto 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 0.5rem auto;
+}
+
+.btn {
+    padding: 12px 40px;
+    font-size: 1.1vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #124d51;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    background-color: #e07525;
+}
+
+.btnDesc {
+    font-size: 0.6vw;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3.3vw;
+  }
+  .description {
+    font-size: 1.75vw;
+    width: 95%;
+  }
+  .btn {
+    font-size: 1.5vw;
+    padding: 10px 20px;
+  }
+  .btnDesc {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .title {
+    font-size: 6vw;
+  }
+  .description {
+    font-size: 2.9vw;
+    width: 100%;
+  }
+  .buttonContainer {
+    flex-direction: column;
+  }
+  .btn {
+    font-size: 3.3vw;
+  }
+  .btnDesc {
+    font-size: 2.5vw;
+  }
+}

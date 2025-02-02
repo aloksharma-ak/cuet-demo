@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  padding: 3vw 0;
+}
+
+.title {
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.comparisonTable th {
+  background-color: #071A13;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.comparisonTable td {
+    font-size: 1rem;
+    color: #ddd;
+    background-color: #092225;
+}
+
+.conclusion {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.proTip {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .comparisonTable th,
+  .comparisonTable td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .conclusion,
+  .proTip {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw;
+  }
+
+  .comparisonTable th,
+  .comparisonTable td {
+    padding: 8px;
+    font-size: 3vw;
+  }
+
+  .conclusion,
+  .proTip {
+    font-size: 3.3vw;
+  }
+}

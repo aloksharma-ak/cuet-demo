@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 10%;
+  gap: 20px;
+  color: #fff;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: 30vw;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.textContainer {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 18px;
+  color: #e07525; /* Accent orange color */
+  margin-bottom: 10px;
+}
+
+.subHeading {
+  font-size: 2.5rem;
+  color: #e07525; /* Light orange */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #d9d9d9;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.primaryButton {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.primaryButton:hover {
+  background-color: #e07525;
+  transform: scale(0.95);
+}
+
+.secondaryButton {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #2f4f40;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondaryButton:hover {
+  background-color: #2f4f40;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .subHeading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .imageContainer {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .heading {
+    text-align: center;
+  }
+  .subHeading {
+    text-align: center;
+    font-weight: 600;
+  }
+  .description {
+    text-align: center;
+  }
+  .buttons {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    height: 75vw;
+  }
+  .heading {
+    font-size: 3.8vw;
+  }
+  .subHeading {
+    font-size: 4.9vw;
+  }
+  .description {
+    font-size: 3.3vw;
+    text-align: justify;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .primaryButton,
+  .secondaryButton {
+    font-size: 3.3vw;
+    width: 100%;
+  }
+}

@@ -1,0 +1,251 @@
+/* FranchiseeHero.module.css */
+.franchiseeIntroContainer {
+  width: 100%;
+  padding: 3vw 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1vw;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.franchiseeContent {
+  position: relative;
+}
+
+.franchiseeContentDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5vw;
+  padding: 4vw 0;
+}
+
+.franchiseeContentDiv h3 {
+  font-size: 1.6vw;
+  font-weight: 300;
+}
+
+.franchiseeContentDiv h1 {
+  font-size: 3vw;
+}
+
+.franchiseeContentDiv h1 span {
+  color: #e07525;
+}
+
+.franchiseeContentDiv p {
+  width: 80%;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.franchiseeContent a {
+  padding: 0.8rem 2rem;
+  background-color: #e07525;
+  margin-top: 3vw;
+  border-radius: 5px;
+}
+
+.overlayDiv {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.overlayDiv .cf {
+  position: relative;
+  z-index: 11;
+}
+
+.overlayForm {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.franchiseePoster {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+  object-position: 0 33%;
+}
+
+.whyFranchiseeContainer {
+  width: 100%;
+  padding: 0vw 10%;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-gap: 1vw;
+}
+
+.whyFranchiseeContainer h2 {
+  font-size: 2.5rem;
+}
+
+.whyFranchiseeContainer p {
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin-bottom: 2vw;
+}
+
+.promoCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vw;
+}
+
+.promoCardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #092225;
+  border: 1px solid #0a5c52;
+  border-radius: 1rem;
+}
+
+.promoCardItem .image {
+  width: 6vw;
+  height: 6vw;
+  padding: 1vw;
+  border-radius: 50%;
+  /* background-color: #039887; */
+}
+
+.promoCardItem .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.promoCardItem h3 {
+  font-size: 1.2vw;
+}
+
+.promoCardItem p {
+  font-size: 1vw;
+  text-align: justify;
+}
+
+.promoCardItem:hover,
+.promoCardItem:focus,
+.promoCardItem:active {
+  transform: translateY(-1vw);
+  border-color: aqua;
+}
+
+.heading1Desc {
+  font-size: 1.1vw;
+  font-weight: 300;
+  opacity: 0.7;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading1Title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .franchiseeContentDiv h3 {
+    font-size: 1.8vw;
+  }
+  .franchiseeContentDiv h1 {
+    font-size: 5vw;
+  }
+  .whyFranchiseeContainer h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .franchiseeContentDiv {
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .franchiseeContentDiv h3 {
+    font-size: 3vw;
+  }
+  .franchiseeContentDiv h1 {
+    font-size: 5vw;
+  }
+  .franchiseeContentDiv p {
+    width: 100%;
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+  .franchiseeContent a {
+    padding: 0.4rem 2rem;
+    font-size: 3vw;
+  }
+  .whyFranchiseeContainer h2 {
+    font-size: 6.3vw;
+  }
+  .whyFranchiseeContainer > p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+  .promoCard {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vw;
+  }
+  .promoCard .image {
+    width: 15vw;
+    height: 15vw;
+  }
+  .promoCard h3 {
+    font-size: 4vw;
+  }
+  .promoCard p {
+    font-size: 3vw;
+  }
+
+  .heading1Desc {
+    font-size: 3vw;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+  
+  .heading1Title {
+    font-size: 8.1vw;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+}
+
+
+.faqs {
+  padding: 0 10%;
+}
+
+@media (max-width: 480px) {
+  .faqs {
+    padding: 0 5%;
+  }
+}

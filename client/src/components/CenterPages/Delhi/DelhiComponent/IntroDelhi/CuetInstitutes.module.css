@@ -1,0 +1,165 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.1vw;
+  color: #ddd;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.institutesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.instituteCard {
+  width: 100%;
+  border-left: 1px solid #ddd;
+  padding: 5px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #00000022;
+  transition: transform 0.3s ease;
+}
+
+.instituteCard:hover {
+  transform: translateY(-3px);
+}
+
+.instituteName {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.instituteOverview {
+  font-size: 1vw;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  color: #ddd;
+}
+
+.features,
+.programs {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.features h3,
+.programs h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #e07525;
+}
+
+.features ul,
+.programs ul {
+  padding-left: 1rem;
+}
+
+.features li,
+.programs li {
+  font-size: 1vw;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+.successStories {
+  font-size: 1vw;
+  color: #ddd;
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3vw;
+  }
+
+  .description {
+    font-size: 1.5vw;
+  }
+
+  .instituteCard {
+    padding: 15px;
+  }
+
+  .instituteOverview,
+  .features li,
+  .programs li,
+  .successStories {
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .instituteCard {
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .instituteCard {
+    padding: 15px;
+  }
+
+  .instituteName {
+    font-size: 1.2rem;
+  }
+
+  .instituteOverview,
+  .features li,
+  .programs li,
+  .successStories {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .instituteName {
+    font-size: 1.2rem;
+  }
+
+  .instituteOverview,
+  .features li,
+  .programs li,
+  .successStories {
+    font-size: 3.3vw;
+  }
+}

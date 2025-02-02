@@ -1,0 +1,55 @@
+.ReadyForSpark {
+    width: 100%;
+    padding: 3vw 10%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #03352B;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-bottom: 15rem;
+}
+
+.description {
+    font-size: 1.3vw;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #FFFFFF;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.floatingFeatures {
+    padding: 0 2rem;
+    position: relative;
+    top: -12rem;
+}
+
+.programStructure {
+    position: relative;
+    top: -8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ReadyForSpark {
+        padding: 5vw 5%;
+    }
+    .container {
+        padding: 1.5rem;
+        padding-bottom: 15rem;
+    }
+    .description {
+        font-size: 3.3vw;
+    }
+    .floatingFeatures {
+        padding: 0 1.5rem;
+    }
+}

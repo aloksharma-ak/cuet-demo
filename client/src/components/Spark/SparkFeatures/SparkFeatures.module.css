@@ -1,0 +1,69 @@
+.SparkFeatures {
+    width: 100%;
+}
+
+.title {
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin: 0 1rem 2rem;
+}
+
+.title span {
+    color: #e07525;
+}
+
+.features {
+    width: 100%;
+    color: #000;
+    background-color: #6bc4a6;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.feature {
+    list-style: decimal;
+    margin-bottom: 0.5rem;
+}
+
+.featureTitle {
+    font-size: 1.5vw;
+    font-weight: 550;
+}
+
+.featureList {
+    margin-left: 1.5rem;
+}
+
+.featureList li {
+    list-style: disc;
+    font-size: 1.1vw;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 4vw;
+    }
+    .featureTitle {
+        font-size: 2vw;
+    }
+    .featureList li {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 8vw;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .featureTitle {
+        font-size: 4.2vw;
+    }
+    .featureList li {
+        font-size: 3.5vw;
+    }
+}

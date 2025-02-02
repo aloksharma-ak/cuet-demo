@@ -1,0 +1,96 @@
+.container {
+  padding: 3rem 20px;
+  border-radius: 10px;
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color:#205e57;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 calc(33.33% - 40px); /* Responsive cards with a 3-column layout */
+  max-width: 280px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  margin: 0 auto 10px;
+}
+
+.iconImage {
+  width: 50px;
+  height: 50px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .card {
+    flex: 1 1 calc(40% - 40px);
+    max-width: 100%;
+  }
+  .cardContainer {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  .title {
+    font-size: 7vw;
+  }
+  .card {
+    padding: 15px;
+  }
+  .cardDescription {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,51 @@
+.tableContainer {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.materialTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.materialTable th,
+.materialTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.materialTable th {
+  background-color: #071A13;
+  font-weight: 600;
+}
+
+.materialTable td {
+    background-color: #092225;
+}
+
+.materialTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .materialTable th,
+  .materialTable td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .tableContainer {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .materialTable th,
+  .materialTable td {
+    font-size: 3vw;
+    padding: 8px;
+  }
+}

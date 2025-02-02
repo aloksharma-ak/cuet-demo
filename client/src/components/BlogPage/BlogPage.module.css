@@ -1,0 +1,20 @@
+.blogContainer{
+    margin-top: 4rem;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogTitle, .notFound {
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .blogTitle, .notFound {
+        font-size: 10vw;
+        padding: 0 1rem;
+    }
+}

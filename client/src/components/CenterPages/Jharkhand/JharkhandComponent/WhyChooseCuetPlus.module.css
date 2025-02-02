@@ -1,0 +1,147 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.151);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .featureCard {
+    background-color: #092225;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(100% / 2 - 30px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .featureTitle {
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+  
+  .featureAdvantage {
+    font-size: 1vw;
+    color: #bbdee0;
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+  
+  .conclusion {
+    font-size: 1.1vw;
+    color: #ddd;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+
+
+/* Responsive Breakpoints */
+
+/* For larger screens (Desktops and Tablets) */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3vw;
+  }
+
+  .featureCard {
+    width: calc(50% - 30px);  /* Adjust for better spacing */
+  }
+
+  .featureTitle {
+    font-size: 2vw;
+  }
+
+  .featureAdvantage {
+    font-size: 1.6vw;
+  }
+
+  .conclusion {
+    font-size: 1.5vw;
+  }
+}
+
+/* For smaller screens (Tablets and Small Tablets) */
+@media (max-width: 900px) {
+  .title {
+    font-size: 4vw;
+  }
+
+  .featureCard {
+    width: 100%;
+  }
+
+  .featureTitle {
+    font-size: 2.5vw;
+  }
+
+  .featureAdvantage {
+    font-size: 2vw;
+  }
+
+  .conclusion {
+    font-size: 1.8vw;
+    text-align: justify;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  .title {
+    font-size: 5vw;
+  }
+
+  .featureCard {
+    width: 100%;
+  }
+
+  .featureTitle {
+    font-size: 3vw;
+  }
+
+  .featureAdvantage {
+    font-size: 2.5vw;
+  }
+
+  .conclusion {
+    font-size: 2vw;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw;
+  }
+
+  .featureCard {
+    width: 100%;
+  }
+
+  .featureTitle {
+    font-size: 4.5vw;
+  }
+
+  .featureAdvantage {
+    font-size: 3.3vw;
+  }
+
+  .conclusion {
+    font-size: 3vw;
+  }
+}

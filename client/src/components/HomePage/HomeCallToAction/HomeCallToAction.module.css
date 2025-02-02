@@ -1,0 +1,65 @@
+.HomeCallToAction {
+  background: #071a13;
+  padding: 3vw 10%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.HomeCallToAction__title {
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+
+.HomeCallToAction__subtitle {
+  font-weight: 500;
+  font-size: 1.62vw;
+  margin-top: 0.8rem;
+}
+
+.HomeCallToAction__button {
+  outline: none;
+  border: none;
+  background: #065e61;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5vw;
+  padding: 1rem 2.5rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.HomeCallToAction__button:hover {
+  background: #e07525;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .HomeCallToAction__title {
+    font-size: 3vw;
+  }
+
+  .HomeCallToAction__subtitle,.HomeCallToAction__button  {
+    font-size: 1.9vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+.HomeCallToAction {
+    flex-direction: column;
+    padding: 8vw 5%;
+}
+
+  .HomeCallToAction__title {
+    font-size: 5.1vw;
+    text-align: center;
+}
+
+.HomeCallToAction__subtitle,.HomeCallToAction__button  {
+    font-size: 3.3vw;
+    text-align: center;
+  }
+}

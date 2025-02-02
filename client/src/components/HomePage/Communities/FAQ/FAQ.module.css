@@ -1,0 +1,130 @@
+/* General Styles */
+.faqContainer {
+  width: fit-content;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #113b2ace;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #e07525;
+}
+
+/* FAQ Group */
+.faqsGroupContent {
+  display: flex;
+  gap: 10px;
+}
+
+.faqGroup {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FAQ Item */
+.faqItem {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #0d3224;
+}
+
+/* Question */
+.question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.question:hover {
+  background-color: #107474;
+}
+
+.question.active {
+  background-color: #0e5d52;
+}
+
+.icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e07525;
+}
+
+/* Answer */
+.answerContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.answerContainer.open {
+  max-height: 200px;
+  padding: 1rem 1.5rem;
+}
+
+.answer {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+  white-space: pre-wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .faqsGroupContent {
+    flex-direction: column;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .answer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faqContainer {
+    margin: 2rem auto;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .question {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .answer {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+}

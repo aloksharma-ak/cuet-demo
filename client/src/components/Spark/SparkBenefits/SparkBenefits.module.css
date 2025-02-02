@@ -1,0 +1,90 @@
+.benefitsWrapper {
+  width: 100%;
+  padding: 0 10% 3vw;
+}
+
+.SparkBenefits {
+  background-color: #6bc4a6;
+  color: #000;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.title {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.subTitle {
+  font-size: 1.4vw;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.list {
+  padding-left: 1.5rem;
+}
+
+.listItem {
+  list-style: disc;
+  font-size: 1.1vw;
+  font-weight: 300;
+}
+
+.description {
+  font-size: 1.1vw;
+  font-weight: 300;
+  margin-left: 0.5rem;
+}
+
+.container {
+  margin-top: 0.5rem;
+}
+
+.testimonial {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4vw;
+  }
+  .subTitle {
+    font-size: 2.4vw;
+  }
+  .listItem,
+  .description {
+    font-size: 1.8vw;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefitsWrapper {
+    padding: 0 5% 6vw;
+  }
+  .SparkBenefits {
+    position: relative;
+  }
+  .SparkBenefits::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 2rem;
+    background: aqua;
+    position: absolute;
+    top: -10vw;
+    left: 0;
+  }
+  .title {
+    font-size: 8vw;
+  }
+  .subTitle {
+    font-size: 5.5vw;
+  }
+  .listItem,
+  .description {
+    font-size: 3.3vw;
+    text-align: justify;
+  }
+}

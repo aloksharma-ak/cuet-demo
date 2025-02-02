@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  padding-bottom: 2vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionHeading {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.content, .description {
+  font-size: 1.1vw;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.pointsList {
+  padding-left: 1rem;
+}
+
+.point {
+  list-style: disc;
+  font-size: 1vw;
+  margin-bottom: 0.6rem;
+  color: #ddd;
+}
+
+.point strong {
+  font-weight: 600;
+}
+
+.proTip {
+  font-size: 1rem;
+  font-style: italic;
+  color: #eee;
+  margin-top: 10px;
+}
+
+.conclusion {
+  font-size: 1vw;
+  color: aqua;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3vw; /* Larger font size for mid-range screens */
+  }
+
+  .sectionHeading {
+    font-size: 2.5vw;
+  }
+
+  .content, .description,
+  .point {
+    font-size: 1.5vw;
+  }
+
+  .conclusion {
+    font-size: 1.5vw;
+  }
+
+  .proTip {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4vw; /* Larger font size for smaller screens */
+  }
+
+  .sectionHeading {
+    font-size: 3vw;
+  }
+
+  .content, .description,
+  .point {
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .conclusion {
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .proTip {
+    font-size: 1.9vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw; /* Even larger font size for very small screens */
+  }
+
+  .sectionHeading {
+    font-size: 4.5vw;
+  }
+
+  .content, .description,
+  .point {
+    font-size: 3.3vw;
+  }
+
+  .conclusion {
+    font-size: 3.3vw;
+  }
+  .proTip {
+    font-size: 3.3vw;
+  }
+}

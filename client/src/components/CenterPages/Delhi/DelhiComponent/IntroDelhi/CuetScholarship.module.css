@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title {
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.table th {
+  background-color: #071A13;
+  font-weight: 500;
+}
+
+.table tr {
+  background-color: #092225;
+}
+
+
+.footer {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 3vw;
+    padding: 8px;
+  }
+
+  .footer {
+    font-size: 3.3vw;
+  }
+}

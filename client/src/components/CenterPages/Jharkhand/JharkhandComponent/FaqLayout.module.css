@@ -1,0 +1,166 @@
+/* FaqLayout.module.css */
+.faqContainer {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faqItem {
+  background-color: #113b2a;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 255, 0.205);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.description,
+.question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.2vw;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.question:hover {
+  background-color: #107474;
+}
+
+.answerContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.answerContainer.open {
+  max-height: 500px; /* Large enough to fit content */
+  padding: 15px 15px; /* Restore padding when open */
+}
+
+.answer {
+  font-size: 1vw;
+  line-height: 1.5;
+  color: #ddd;
+  white-space: pre-wrap; /* Keeps formatting for \n */
+}
+
+.details {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.detailItem {  
+  font-size: 1vw;
+  line-height: 1.5;
+  color: #ddd;
+  list-style: disc;
+  margin-bottom: 5px;
+}
+
+
+/* For larger screens (Desktops and Tablets) */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3vw;
+  }
+
+  .description,
+  .question {
+    font-size: 1.5vw;
+  }
+
+  .answer, .detailItem {
+    font-size: 1.2vw;
+  }
+}
+
+/* For smaller screens (Tablets and Small Tablets) */
+@media (max-width: 900px) {
+  .faqContainer {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .description {
+    text-align: justify;
+  }
+
+  .description,
+  .question {
+    font-size: 2vw;
+  }
+
+  .answer, .detailItem {
+    font-size: 1.5vw;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  .faqContainer {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+
+  .description,
+  .question {
+    font-size: 4vw;
+  }
+
+  .answer, .detailItem {
+    font-size: 2.5vw;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .faqContainer {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 6vw;
+  } 
+
+  .description,
+  .question {
+    font-size: 4.5vw;
+  }
+
+  .answer, .detailItem {
+    font-size: 3vw;
+  }
+}

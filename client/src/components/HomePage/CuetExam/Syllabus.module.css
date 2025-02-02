@@ -1,0 +1,140 @@
+.syllabus {
+  width: 100%;
+  padding: 2vw 3vw;
+}
+
+.syllabus h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+  position: relative;
+}
+
+.syllabus h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #444;
+  margin-top: 0.8vw;
+}
+
+.titleDesc {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2vw;
+}
+
+.titleDesc .icon svg {
+  font-size: 1.5vw;
+}
+
+.titleDesc p {
+  font-size: 1.1vw;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 0.9vw;
+}
+
+.syllabusContainer {
+  width: 100%;
+  margin-top: 1vw;
+  border: 1px solid rgb(16, 90, 90);
+  padding: 0.8vw;
+  border-radius: 0.5vw;
+  transition: all 0.3s ease;
+}
+
+.syllabusContainer:hover,
+.syllabusContainer:focus,
+.syllabusContainer:active {
+  border-color: #e07525;
+}
+
+.syllabusList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25vw;
+}
+
+.syllabusName {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  border-radius: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.syllabusName:hover,
+.syllabusName:focus,
+.syllabusName:active {
+  background-color: #e07525;
+}
+
+.syllabusName a {
+  font-size: 1.1vw;
+  font-weight: 400;
+  padding: 0.5vw 1vw;
+}
+
+.mobileSyllabus {
+  display: none;
+  width: 100%;
+  background: #000000;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .syllabus h2 {
+    font-size: 3.5vw !important;
+  }
+
+  .titleDesc p {
+    font-size: 1.5vw !important;
+  }
+
+  .syllabusName a {
+    font-size: 2.5vw;
+  }
+
+  .syllabusName {
+    width: 47% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .syllabus {
+    padding: 2vw 3vw;
+  }
+
+  .syllabus h2 {
+    font-size: 4vw !important;
+    margin-bottom: 1.5vw !important;
+  }
+
+  .syllabus h2::after {
+    margin-top: 1vw;
+  }
+
+  .titleDesc .icon svg {
+    font-size: 3vw !important;
+    margin-bottom: 2.5vw;
+  }
+
+  .titleDesc p {
+    font-size: 2.8vw !important;
+    line-height: 1.25 !important;
+    margin-bottom: 1.1vw !important;
+    text-align: justify;
+  }
+
+  .syllabusName a {
+    font-size: 2.5vw !important;
+  }
+}

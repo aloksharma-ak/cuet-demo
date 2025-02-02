@@ -1,0 +1,119 @@
+/* Wrapper for the header */
+.wrapperDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Header container */
+.header {
+  pointer-events: auto;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Navbar layout */
+.navbar {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.104);
+
+}
+
+/* Logo section */
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar menu list (desktop) */
+.navbarMenuList {
+  display: flex;
+  gap: 2vw;
+}
+
+/* Responsive styles for mobile */
+.navbarBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  padding: 1vw 0;
+}
+
+.navbarBrandSection {
+  display: flex;
+  gap: 1vw;
+}
+
+.logo {
+  width: 13vw;
+}
+
+.mobileLoginBtn {
+  display: none !important;
+}
+
+/* Overlay for mobile menu */
+.navbarMenuListOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+.navbarMenuListOverlayActive {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Navbar toggle button for mobile */
+.navbarToggle {
+  display: none;
+}
+
+.navbarToggler {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 3%;
+  }
+  .navbarMenuList {
+    display: none;
+  }
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navbar {
+    height: 8rem;
+  }
+}

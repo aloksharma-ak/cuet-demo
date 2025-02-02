@@ -1,0 +1,177 @@
+/* IntroductionLayout.module.css */
+
+.container {
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5vw;
+  color: #f5f8fa;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.sectionContent,
+.caseStudy,
+.conclusion {
+  font-size: 1.1vw;
+  color: #ddd;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.caseStudy,
+.conclusion {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.sectionContent {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon svg {
+  font-size: 1.3vw;
+}
+
+.pointsList {
+  padding-left: 3rem;
+}
+
+.pointItem {
+  list-style: disc;
+  font-size: 1vw;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.featuresTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featuresTable th,
+.featuresTable td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 0.75rem;
+}
+
+.featuresTable th {
+  background: #071a13;
+  font-weight: 600;
+}
+
+.featuresTable td {
+  background-color: #092225;
+  color: #eee;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .sectionTitle {
+    font-size: 2.5vw;
+  }
+
+  .sectionContent,
+  .caseStudy,
+  .conclusion,
+  .featuresTable td {
+    font-size: 1.5vw;
+  }
+
+  .pointItem {
+    font-size: 1.2vw;
+  }
+
+  .icon svg {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionTitle {
+    font-size: 3vw;
+  }
+
+  .caseStudy,
+  .conclusion,
+  .sectionContent {
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .featuresTable td {
+    font-size: 2vw;
+  }
+
+  .pointItem {
+    font-size: 1.5vw;
+    text-align: justify;
+  }
+
+  .icon svg {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionTitle {
+    font-size: 4vw;
+  }
+
+  .sectionContent,
+  .caseStudy,
+  .conclusion,
+  .featuresTable td {
+    font-size: 3vw;
+  }
+
+  .pointItem {
+    font-size: 2.5vw;
+  }
+
+  .icon svg {
+    font-size: 3.3vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .sectionTitle {
+    font-size: 5vw;
+  }
+
+  .sectionContent,
+  .caseStudy,
+  .conclusion,
+  .featuresTable td {
+    font-size: 4vw;
+  }
+
+  .pointsList {
+    padding-left: 2.5rem;
+  }
+
+  .pointItem {
+    font-size: 3vw;
+  }
+
+  .icon svg {
+    font-size: 4.5vw;
+  }
+}

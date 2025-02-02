@@ -1,0 +1,86 @@
+.instituteContainer {
+  width: 100%;
+  line-height: 1.6;
+  padding: 3vw 0;
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.introduction {
+  font-size: 1.2vw;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive Breakpoints */
+
+/* For larger screens (Desktops and Tablets) */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3vw;
+  }
+
+  .introduction {
+    font-size: 2vw;
+  }
+}
+
+/* For smaller screens (Tablets and Small Tablets) */
+@media (max-width: 900px) {
+  .title {
+    font-size: 4vw;
+  }
+
+  .introduction {
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .sections {
+    gap: 15px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  .title {
+    font-size: 5vw;
+  }
+
+  .introduction {
+    font-size: 3vw;
+  }
+
+  .sections {
+    gap: 10px;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .instituteContainer {
+    padding: 10vw 0;
+  }
+  .title {
+    font-size: 5vw;
+  }
+
+  .introduction {
+    font-size: 3.3vw;
+  }
+
+  .sections {
+    gap: 5px;
+  }
+}

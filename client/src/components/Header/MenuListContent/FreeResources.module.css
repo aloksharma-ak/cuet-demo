@@ -1,0 +1,143 @@
+.menuDrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #092225;
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid #0f4043;
+  border-bottom-left-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
+  overflow: hidden;
+  padding: 4vw 2.5vw;
+}
+
+.menuDropContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menuDropLeftCol {
+  width: 55%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2vw;
+  padding-right: 2vw;
+}
+
+.menuDropStream {
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menuDropStreamDetails {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5vw;
+}
+
+.menuDropStreamDetails .headingDesc {
+  font-size: 0.85vw;
+  line-height: 1;
+}
+
+.menuDropContainerImg {
+  border-left: 1.5px solid #333;
+  padding-left: 2vw;
+  height: 280px;
+  width: 50%;
+}
+
+.menuDropContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* Dynamic classes */
+
+.bgDarkGray {
+  background-color: #124d51;
+}
+.bgLightGray {
+  background-color: #0f4043;
+}
+
+.menuItem {
+  width: 100%;
+  min-width: 12vw;
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 1vw 1.5vw;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menuItem:is(:hover, :focus, :active) {
+  background-color: #0a2e30;
+}
+
+.menuItem:active {
+  background-color: #0d3538;
+}
+
+.menuItem.selected {
+  color: #e07525;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5vw;
+}
+
+.pastPaperLink {
+  min-width: 19vw;
+  max-width: 1vw;
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  padding: 0.8vw 1vw;
+  background-color: #0d3538;
+  border-radius: 0.4vw;
+  border: 1px solid #ffffff12;
+}
+
+.pastPaperLink img {
+  width: 1.2vw;
+}
+
+.pastPaperLink span {
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .menuDrop {
+    min-height: 25vw;
+  }
+  .menuDropContainerImg {
+    height: 18vw;
+  }
+}

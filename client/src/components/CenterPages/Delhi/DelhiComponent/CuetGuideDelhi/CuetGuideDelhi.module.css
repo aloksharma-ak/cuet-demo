@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  font-size: 3vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subTitle {
+  font-weight: 1.5vw;
+  font-weight: 500;
+}
+
+.tableOfContents {
+  margin-top: 1rem;
+}
+
+.section {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  list-style: decimal;
+  transition: all 0.3s ease-in-out;
+}
+
+.section:is(:first-child, :nth-child(2)) .sectionTitle {
+  cursor: text;
+}
+
+.section:not(:first-child, :nth-child(2)) {
+  text-decoration: underline;
+}
+
+.sectionTitle {
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.section:not(:first-child, :nth-child(2)):hover,
+.section:not(:first-child, :nth-child(2)):hover .sectionTitle {
+  color: #e07525;
+  cursor: pointer;
+}
+
+.subsections {
+  margin-left: 1rem;
+}
+
+.subsection {
+  font-size: 1vw;
+  list-style: disc;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.subsection a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.subsection:hover,
+.subsection:hover a {
+  color: #e07525;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3.5vw; /* Further reduce font size */
+  }
+
+  .subTitle {
+    font-size: 2.5vw;
+  }
+
+  .sectionTitle {
+    font-size: 2vw;
+  }
+
+  .subsection {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4vw; /* Further reduce font size */
+  }
+
+  .subTitle {
+    font-size: 3vw;
+  }
+
+  .sectionTitle {
+    font-size: 2.8vw;
+  }
+
+  .subsection {
+    font-size: 2vw;
+  }
+
+  .container {
+    padding: 0 0.8rem; /* Reduce padding on smaller devices */
+  }
+}
+
+/* For extra small screens (e.g., 480px or less) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw; /* Max scaling down for the title */
+  }
+
+  .subTitle {
+    font-size: 5vw;
+  }
+
+  .sectionTitle {
+    font-size: 4.5vw;
+  }
+
+  .subsection {
+    font-size: 3.3vw;
+  }
+
+  .section {
+    margin-left: 0.5rem;
+  }
+
+  .subsections {
+    margin-left: 1rem;
+  }
+}

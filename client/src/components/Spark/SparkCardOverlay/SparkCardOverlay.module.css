@@ -1,0 +1,150 @@
+.cardContainer {
+  width: 100%;
+  height: 38vw;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.cardContent {
+  max-width: 60%;
+  background-color: #124d51;
+  border-radius: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 2rem 2.5rem 7rem 5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cardTitle {
+    width: 70%;
+  font-size: 2.3vw;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cardImage {
+  max-width: 55%;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1430px) {
+    .cardContent {
+        max-width: 650px;
+    }
+    .cardImage {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cardContent {
+        max-width: 550px;
+    }
+    .cardTitle {
+        width: 80%;
+    }
+    .cardImage {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .cardContent {
+        max-width: 500px;
+    }
+    .cardImage {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cardContent {
+        max-width: 450px;
+    }
+    .cardTitle {
+        width: 80%;
+    }
+    .cardImage {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cardContainer {
+        height: 42vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cardContainer {
+        height: 48vw;
+    }
+    .cardContent {
+        max-width: 400px;
+    }
+    .cardTitle {
+        width: 90%;
+        font-size: 2.5vw;
+    }
+    .cardImage {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .cardContainer {
+        height: 52vw;
+    }
+    .cardContent {
+        max-width: 100%;
+    }
+    .cardTitle {
+        width: 90%;
+        font-size: 2.5vw;
+    }
+    .cardImage {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cardContainer {
+        height: 100%;
+    }
+    .cardContent, .cardImage {
+        position: relative;
+    }
+    .cardContent {
+        padding: 3rem;
+        border-end-end-radius: 0;
+        border-end-start-radius: 0;
+    }
+    .cardImage {
+        max-width: 100%;
+        border-start-start-radius: 0;
+        border-start-end-radius: 0;
+
+    }
+    .cardTitle {
+        width: 100%;
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cardContent {
+        padding: 1.5rem;
+    }
+    .cardTitle {
+        font-size: 5vw;
+    }
+}

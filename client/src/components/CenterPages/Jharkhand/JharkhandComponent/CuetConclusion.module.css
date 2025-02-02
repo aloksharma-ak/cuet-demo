@@ -1,0 +1,198 @@
+.container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Section */
+.summary {
+  margin-bottom: 20px;
+  padding: 1.5rem;
+  background: #071a13;
+  border: 1px solid rgba(0, 255, 255, 0.228);
+  border-radius: 8px;
+}
+
+.summaryTitle {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.subPointsTitle {
+  margin: 0.8rem 0;
+  font-size: 1.3vw;
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.summaryList,
+.subPointsList,
+.whyCUETPlusList {
+  margin-left: 20px;
+}
+
+.summaryListItem,
+.subPointItem {
+  list-style: disc;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.whyCUETPlusItem {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+/* Why CUETPlus Section */
+.whyCUETPlus {
+  margin-bottom: 20px;
+  padding: 1.5rem;
+  background: #071a13;
+  border: 1px solid rgba(0, 255, 255, 0.228);
+  border-radius: 8px;
+}
+
+.whyCUETPlusTitle {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.whyCUETPlusDescription {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.callToAction {
+  padding: 1.5rem;
+  background: #071a13;
+  border: 1px solid rgba(0, 255, 255, 0.228);
+  border-radius: 8px;
+}
+
+.callToActionTitle {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.callToActionList {
+  margin-left: 20px;
+}
+
+.callToActionItem {
+  list-style: disc;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.callToActionContact {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #14babd;
+  cursor: pointer;
+  font-size: 1.2vw;
+}
+
+.callToActionContact:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Breakpoints */
+
+/* For larger screens (Desktops and Tablets) */
+@media (max-width: 1200px) {
+  .summaryTitle,
+  .whyCUETPlusTitle,
+  .callToActionTitle {
+    font-size: 2.5vw;
+  }
+
+  .subPointsTitle {
+    font-size: 1.8vw;
+  }
+
+  .callToActionContact {
+    font-size: 1.2vw;
+  }
+}
+
+/* For smaller screens (Tablets and Small Tablets) */
+@media (max-width: 900px) {
+  .summaryTitle,
+  .whyCUETPlusTitle,
+  .callToActionTitle {
+    font-size: 3vw;
+  }
+
+  .subPointsTitle {
+    font-size: 2.3vw;
+  }
+
+  .callToActionContact {
+    font-size: 1.8vw;
+  }
+
+  .summaryListItem,
+  .subPointItem,
+  .whyCUETPlusItem,
+  .callToActionItem {
+    font-size: 1.5vw;
+    text-align: justify;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  .summaryTitle,
+  .whyCUETPlusTitle,
+  .callToActionTitle {
+    font-size: 4vw;
+  }
+
+  .subPointsTitle {
+    font-size: 3vw;
+  }
+
+  .callToActionContact {
+    font-size: 2.5vw;
+  }
+
+  .summaryListItem,
+  .subPointItem,
+  .whyCUETPlusItem,
+  .callToActionItem {
+    font-size: 2vw;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .summaryTitle,
+  .whyCUETPlusTitle,
+  .callToActionTitle {
+    font-size: 5vw;
+  }
+
+  .subPointsTitle {
+    font-size: 3.8vw;
+  }
+
+  .callToActionContact {
+    font-size: 3.3vw;
+  }
+
+  .summaryListItem,
+  .subPointItem,
+  .whyCUETPlusItem,
+  .callToActionItem {
+    font-size: 3.3vw;
+  }
+}

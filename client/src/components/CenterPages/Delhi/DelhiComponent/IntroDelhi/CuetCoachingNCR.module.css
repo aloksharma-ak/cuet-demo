@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  padding: 2vw 0;
+}
+
+.title {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.introduction {
+  font-size: 1.1vw;
+  color: #ddd;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.citySection {
+  margin-top: 30px;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 20px;
+  background-color: #0000001e;
+  padding: 1rem 2rem;
+}
+
+.cityName {
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #e07525;
+  margin-bottom: 15px;
+}
+
+.detailSection {
+  margin-bottom: 15px;
+}
+
+.detailHeading {
+  font-size: 1.3vw;
+  font-weight: 450;
+  margin-bottom: 10px;
+}
+
+.pointsList {
+  list-style-type: disc;
+  margin-left: 2.5rem;
+}
+
+.pointItem {
+  font-size: 1vw;
+  font-weight: 300;
+  color: #ddd;
+  list-style: circle;
+  margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+
+/* For Large Screens (Desktops) */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.8vw;
+  }
+  .introduction {
+    font-size: 1.5vw;
+  }
+  .cityName {
+    font-size: 2vw;
+  }
+
+  .detailHeading {
+    font-size: 1.5vw;
+  }
+
+  .pointItem {
+    font-size: 1.3vw;
+  }
+}
+
+/* For Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3vw;
+  }
+
+  .introduction {
+    font-size: 1.5vw;
+  }
+
+  .cityName {
+    font-size: 2.5vw;
+  }
+
+  .detailHeading {
+    font-size: 2vw;
+  }
+
+  .pointItem {
+    font-size: 1.5vw;
+  }
+
+  .pointsList {
+    margin-left: 2rem;
+  }
+}
+
+/* For Small Screens (Mobiles) */
+@media (max-width: 768px) {
+ 
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .introduction {
+    font-size: 2.5vw;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .cityName {
+    font-size: 3vw;
+  }
+
+  .detailHeading {
+    font-size: 2.2vw;
+  }
+
+  .pointItem {
+    font-size: 2vw;
+  }
+
+  .pointsList {
+    margin-left: 2rem;
+  }
+}
+
+/* For Extra Small Screens (Small Phones) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw;
+  }
+
+  .introduction {
+    font-size: 3.5vw;
+  }
+
+  .cityName {
+    font-size: 5vw;
+  }
+
+  .detailHeading {
+    font-size: 4.5vw;
+  }
+
+  .pointItem {
+    font-size: 3.3vw;
+  }
+}

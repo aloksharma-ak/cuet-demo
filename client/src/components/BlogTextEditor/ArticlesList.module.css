@@ -1,0 +1,138 @@
+.ArticlesList {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 6.5rem 2rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.cardPost {
+  flex: 1 1 calc(50% - 2rem);
+  max-width: calc(50% - 2rem);
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardPost:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  padding: 1rem;
+  transition: color 0.3s;
+  word-break: break-word;
+}
+
+.title:hover {
+  color: #e07525; /* Attractive hover color */
+}
+
+.shortDesc {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 1rem;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.author {
+  font-weight: 500;
+  color: #444;
+  position: relative;
+  padding-left: 15px;
+}
+
+.author::before {
+  content: "";
+  width: 12px;
+  height: 1px;
+  border-radius: 2rem;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.time {
+  font-style: italic;
+}
+
+.readMore {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e07525;
+  text-decoration: none;
+  margin: 0 1rem 1rem;
+  border: 1px solid #e07525;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.readMore:hover {
+  background-color: #e07525;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 5rem 1rem 1rem;
+  }
+
+  .cardPost {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .shortDesc {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .readMore {
+    font-size: 0.875rem;
+  }
+}

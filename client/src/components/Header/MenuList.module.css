@@ -1,0 +1,78 @@
+.menuList {
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  position: relative; 
+  cursor: pointer;
+  padding: 1.5rem 0.5rem;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.menuItem:hover .navLink {
+  color: #e07525;
+}
+
+.menuItem.active {
+  font-weight: bold;
+  color: #e07525;
+}
+
+.navLink {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.dropdownIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.menuItem:hover .dropdownIcon{
+  transform: rotate(180deg);
+}
+
+.activeItemContainer {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+  width: 84vw;
+}
+
+@media screen and (max-width: 1270px) {
+  .navLink {
+    font-size: 0.75rem;
+  }
+  .menuItem {
+    padding: 1.5rem 0.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navLink {
+    font-size: 1.2vw;
+  }
+  .menuItem {
+    padding: 1.5rem 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navLink {
+    font-size: 1.2vw;
+  }
+}

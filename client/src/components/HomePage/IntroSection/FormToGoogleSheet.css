@@ -1,0 +1,20 @@
+.formDemo {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 4vw auto;
+}
+
+.formDemo input {
+    height: 50px;
+    margin-top: 20px;
+    padding: 1vw;
+}
+
+.buttonDemo {
+    width: 200px;
+    background: #c94a4a;
+    color: #fff;
+    outline: none;
+    border: none;
+}
